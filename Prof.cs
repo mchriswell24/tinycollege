@@ -35,30 +35,10 @@ namespace tinycollege
                 "PROF Email"
             };
 
-            ReadcomboBoxBtn.Items.AddRange(columnNames);
-            CreatecomboBoxBtn.Items.AddRange(columnNames);
-            UpdatecomboBoxBtn.Items.AddRange(columnNames);
-            DeletecomboBoxBtn.Items.AddRange(columnNames);
-        }
-
-        private void ReadcomboBoxBtn_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            MessageBox.Show($"You selected: {ReadcomboBoxBtn.SelectedItem}");
-        }
-
-        private void UpdatecomboBoxBtn_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            MessageBox.Show($"You selected: {UpdatecomboBoxBtn.SelectedItem}");
-        }
-
-        private void CreatecomboBoxBtn_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            MessageBox.Show($"You selected: {CreatecomboBoxBtn.SelectedItem}");
-        }
-
-        private void DeletecomboBoxBtn_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            MessageBox.Show($"You selected: {DeletecomboBoxBtn.SelectedItem}");
+            ReadBtn.Items.AddRange(columnNames);
+            CreateBtn.Items.AddRange(columnNames);
+            UpdateBtn.Items.AddRange(columnNames);
+            DeleteBtn.Items.AddRange(columnNames);
         }
 
         private void dataGridViewBtn_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -74,6 +54,11 @@ namespace tinycollege
         private void CrossBtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void CreateBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
