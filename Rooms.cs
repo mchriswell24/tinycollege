@@ -61,5 +61,10 @@ namespace tinycollege
         {
             this.Close();
         }
+
+        private void RoomsInfo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

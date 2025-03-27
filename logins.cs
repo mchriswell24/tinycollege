@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace tinycollege
 {
@@ -25,33 +26,33 @@ namespace tinycollege
         {
 
         }
-
         private void UsernameBtn_TextChanged(object sender, EventArgs e)
         {
 
         }
-
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            string correctUsername = "username";
-            string correctPassword = "password";
+            string username = UsernameBtn.Text;
+            string password = PasswordBtn.Text;
 
-            string enteredUsername = UsernameBtn.Text;
-            string enteredPassword = PasswordBtn.Text;
-
-            if (enteredUsername == correctUsername && enteredPassword == correctPassword)
+            if (username == "admin" && password == "password")
             {
+                // Open the Prof form if login is successful
+                Profes  profesForm = new Profes();
+                profesForm.Show();
 
-
-                // Open AdminForm and close the current Login form
-                AdminForm adminForm = new AdminForm();
-                adminForm.Show();
-                this.Hide();
+              
             }
             else
             {
-                MessageBox.Show("Incorrect username or password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid username or password", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
 }
+
+
+
+    
+
+

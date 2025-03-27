@@ -10,11 +10,14 @@ using System.Windows.Forms;
 
 namespace tinycollege
 {
-    public partial class Prof : Form
+    public partial class Profes : Form
     {
-      
+        public Profes()
+        {
+            InitializeComponent();
+        }
 
-        private void Prof_Load(object sender, EventArgs e)
+        public void Prof_Load(object sender, EventArgs e)
         {
 
         }
@@ -22,58 +25,61 @@ namespace tinycollege
         {
 
         }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void CrossBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+
         }
 
         private void CreateBtn_Click(object sender, EventArgs e)
         {
 
         }
+        private void RoomBtn_Click_1(object sender, EventArgs e)
+        {
+            RoomsInfo roomsInfoForm = new RoomsInfo();
+            roomsInfoForm.Show();
+            this.Hide();
+        }
 
-        private void ReadBtn_Click(object sender, EventArgs e)
+        private void SchoolBtn_Click_1(object sender, EventArgs e)
+        {
+
+            SchoolInfo Form = new SchoolInfo();
+            Form.Show();
+            this.Hide();
+        }
+
+        private void ClassBtn_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void UpdateBtn_Click(object sender, EventArgs e)
+        private void ProfessorBtn_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void DeleteBtn_Click(object sender, EventArgs e)
+        private void StudentBtn_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void EdateBtn_TextChanged(object sender, EventArgs e)
+        private void CourseBtn_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void EIDBtn_TextChanged(object sender, EventArgs e)
+        private void DepartmentBtn_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void StNBtn_TextChanged(object sender, EventArgs e)
+        private void BuildingBtn_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void CCBtn_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void EnGBtn_TextChanged(object sender, EventArgs e)
+        private void SemesterBtn_Click(object sender, EventArgs e)
         {
 
         }

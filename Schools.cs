@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace tinycollege
 {
-    public partial class Schools : Form
+    public partial class SchoolInfo : Form
     {
-        public Schools()
+        public SchoolInfo()
         {
             InitializeComponent();
         }
 
-        private void Schools_Load(object sender, EventArgs e)
+        public void Schools_Load(object sender, EventArgs e)
         {
 
         }

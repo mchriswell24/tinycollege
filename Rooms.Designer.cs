@@ -222,6 +222,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "RoomsInfo";
             Text = "Rooms";
+            Load += RoomsInfo_Load;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridViewBtn).EndInit();
             ResumeLayout(false);
