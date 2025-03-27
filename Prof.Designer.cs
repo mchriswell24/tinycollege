@@ -105,6 +105,7 @@
             ReadBtn.TabIndex = 5;
             ReadBtn.Text = "READ";
             ReadBtn.UseVisualStyleBackColor = true;
+            ReadBtn.Click += ReadBtn_Click;
             // 
             // UpdateBtn
             // 
@@ -116,6 +117,7 @@
             UpdateBtn.TabIndex = 6;
             UpdateBtn.Text = "UPDATE";
             UpdateBtn.UseVisualStyleBackColor = true;
+            UpdateBtn.Click += UpdateBtn_Click;
             // 
             // DeleteBtn
             // 
@@ -127,6 +129,7 @@
             DeleteBtn.TabIndex = 7;
             DeleteBtn.Text = "DELETE";
             DeleteBtn.UseVisualStyleBackColor = true;
+            DeleteBtn.Click += DeleteBtn_Click;
             // 
             // textBox1
             // 
@@ -195,6 +198,7 @@
             EIDBtn.Name = "EIDBtn";
             EIDBtn.Size = new Size(100, 16);
             EIDBtn.TabIndex = 13;
+            EIDBtn.TextChanged += EIDBtn_TextChanged;
             // 
             // StNBtn
             // 
@@ -202,6 +206,7 @@
             StNBtn.Name = "StNBtn";
             StNBtn.Size = new Size(100, 23);
             StNBtn.TabIndex = 14;
+            StNBtn.TextChanged += StNBtn_TextChanged;
             // 
             // CCBtn
             // 
@@ -209,6 +214,7 @@
             CCBtn.Name = "CCBtn";
             CCBtn.Size = new Size(100, 23);
             CCBtn.TabIndex = 15;
+            CCBtn.TextChanged += CCBtn_TextChanged;
             // 
             // EdateBtn
             // 
@@ -216,6 +222,7 @@
             EdateBtn.Name = "EdateBtn";
             EdateBtn.Size = new Size(100, 23);
             EdateBtn.TabIndex = 16;
+            EdateBtn.TextChanged += EdateBtn_TextChanged;
             // 
             // EnGBtn
             // 
@@ -223,15 +230,16 @@
             EnGBtn.Name = "EnGBtn";
             EnGBtn.Size = new Size(100, 23);
             EnGBtn.TabIndex = 17;
+            EnGBtn.TextChanged += EnGBtn_TextChanged;
             // 
             // textBox6
             // 
             textBox6.BackColor = Color.Tan;
             textBox6.BorderStyle = BorderStyle.None;
             textBox6.Font = new Font("Microsoft Sans Serif", 26.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox6.Location = new Point(576, 132);
+            textBox6.Location = new Point(576, 128);
             textBox6.Name = "textBox6";
-            textBox6.Size = new Size(249, 40);
+            textBox6.Size = new Size(219, 40);
             textBox6.TabIndex = 18;
             textBox6.Text = "Enrollment";
             textBox6.TextAlign = HorizontalAlignment.Center;

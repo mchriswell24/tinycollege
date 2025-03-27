@@ -16,5 +16,45 @@ namespace tinycollege
         {
             InitializeComponent();
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DeptInfo_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EdateBtn_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ScBtn_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void deptnameBtn_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CrossBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

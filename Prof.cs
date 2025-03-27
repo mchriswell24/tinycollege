@@ -12,38 +12,15 @@ namespace tinycollege
 {
     public partial class Prof : Form
     {
-        public Prof()
-        {
-            InitializeComponent();
-            PopulateComboBoxes();
-        }
+      
 
         private void Prof_Load(object sender, EventArgs e)
         {
 
         }
-        private void PopulateComboBoxes()
-        {
-            string[] columnNames = {
-                "PROF ID",
-                "Dept Code",
-                "PROF Speciality",
-                "PROF Rank",
-                "PROF LName",
-                "PROF FName",
-                "PROF Initial",
-                "PROF Email"
-            };
-
-            ReadBtn.Items.AddRange(columnNames);
-            CreateBtn.Items.AddRange(columnNames);
-            UpdateBtn.Items.AddRange(columnNames);
-            DeleteBtn.Items.AddRange(columnNames);
-        }
-
         private void dataGridViewBtn_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            MessageBox.Show($"Cell clicked: Row {e.RowIndex}, Column {e.ColumnIndex}");
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -57,6 +34,46 @@ namespace tinycollege
         }
 
         private void CreateBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ReadBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UpdateBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EdateBtn_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EIDBtn_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StNBtn_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CCBtn_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EnGBtn_TextChanged(object sender, EventArgs e)
         {
 
         }

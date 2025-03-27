@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace tinycollege
 {
-    public partial class ClassesInfo : Form
+    public partial class Buildings : Form
     {
-        private void ClassesInfo_Load(object sender, EventArgs e)
+        public Buildings()
+        {
+            InitializeComponent();
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void CrossBtn_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void UpdateBtn_Click(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -32,7 +32,7 @@ namespace tinycollege
 
         }
 
-        private void ReadBtn_Click(object sender, EventArgs e)
+        private void Buildings_Load(object sender, EventArgs e)
         {
 
         }
@@ -42,14 +42,19 @@ namespace tinycollege
 
         }
 
-        private void SemcodeBtn_TextChanged(object sender, EventArgs e)
+        private void ReadBtn_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void RoomcodeBtn_TextChanged(object sender, EventArgs e)
+        private void UpdateBtn_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void CrossBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
