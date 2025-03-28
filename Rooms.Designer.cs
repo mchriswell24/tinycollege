@@ -34,13 +34,14 @@
             RoomtypeBtn = new TextBox();
             RoomcodeBtn = new TextBox();
             textBox2 = new TextBox();
-            DeleteBtn = new Button();
-            UpdateBtn = new Button();
-            ReadBtn = new Button();
-            CreateBtn = new Button();
+            BtnDelete = new Button();
+            BtnUpdate = new Button();
+            BtnRead = new Button();
+            BtnInsert = new Button();
             textBox1 = new TextBox();
             dataGridViewBtn = new DataGridView();
             textBox3 = new TextBox();
+            textBox4 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridViewBtn).BeginInit();
             SuspendLayout();
             // 
@@ -48,7 +49,7 @@
             // 
             CrossBtn.FlatStyle = FlatStyle.Popup;
             CrossBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            CrossBtn.Location = new Point(969, 1);
+            CrossBtn.Location = new Point(917, 0);
             CrossBtn.Name = "CrossBtn";
             CrossBtn.Size = new Size(75, 23);
             CrossBtn.TabIndex = 7;
@@ -60,10 +61,10 @@
             // 
             textBox6.BackColor = Color.Tan;
             textBox6.BorderStyle = BorderStyle.None;
-            textBox6.Font = new Font("Microsoft Sans Serif", 26.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox6.Location = new Point(535, 107);
+            textBox6.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox6.Location = new Point(506, 136);
             textBox6.Name = "textBox6";
-            textBox6.Size = new Size(314, 40);
+            textBox6.Size = new Size(314, 33);
             textBox6.TabIndex = 79;
             textBox6.Text = "Rooms Info";
             textBox6.TextAlign = HorizontalAlignment.Center;
@@ -71,7 +72,7 @@
             // BuildingcodeBtn
             // 
             BuildingcodeBtn.BorderStyle = BorderStyle.None;
-            BuildingcodeBtn.Location = new Point(229, 443);
+            BuildingcodeBtn.Location = new Point(229, 307);
             BuildingcodeBtn.Name = "BuildingcodeBtn";
             BuildingcodeBtn.Size = new Size(100, 16);
             BuildingcodeBtn.TabIndex = 78;
@@ -80,7 +81,7 @@
             // RoomtypeBtn
             // 
             RoomtypeBtn.BorderStyle = BorderStyle.None;
-            RoomtypeBtn.Location = new Point(229, 346);
+            RoomtypeBtn.Location = new Point(229, 269);
             RoomtypeBtn.Name = "RoomtypeBtn";
             RoomtypeBtn.Size = new Size(100, 16);
             RoomtypeBtn.TabIndex = 77;
@@ -89,7 +90,7 @@
             // RoomcodeBtn
             // 
             RoomcodeBtn.BorderStyle = BorderStyle.None;
-            RoomcodeBtn.Location = new Point(229, 261);
+            RoomcodeBtn.Location = new Point(229, 233);
             RoomcodeBtn.Name = "RoomcodeBtn";
             RoomcodeBtn.Size = new Size(100, 16);
             RoomcodeBtn.TabIndex = 76;
@@ -100,67 +101,67 @@
             textBox2.BackColor = Color.Tan;
             textBox2.BorderStyle = BorderStyle.None;
             textBox2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(27, 440);
+            textBox2.Location = new Point(57, 303);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(155, 19);
             textBox2.TabIndex = 74;
             textBox2.Text = "Building Code:";
             textBox2.TextAlign = HorizontalAlignment.Center;
             // 
-            // DeleteBtn
+            // BtnDelete
             // 
-            DeleteBtn.FlatStyle = FlatStyle.Popup;
-            DeleteBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            DeleteBtn.Location = new Point(920, 569);
-            DeleteBtn.Name = "DeleteBtn";
-            DeleteBtn.Size = new Size(95, 33);
-            DeleteBtn.TabIndex = 72;
-            DeleteBtn.Text = "DELETE";
-            DeleteBtn.UseVisualStyleBackColor = true;
-            DeleteBtn.Click += DeleteBtn_Click;
+            BtnDelete.FlatStyle = FlatStyle.Popup;
+            BtnDelete.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            BtnDelete.Location = new Point(829, 474);
+            BtnDelete.Name = "BtnDelete";
+            BtnDelete.Size = new Size(95, 29);
+            BtnDelete.TabIndex = 72;
+            BtnDelete.Text = "DELETE";
+            BtnDelete.UseVisualStyleBackColor = true;
+            BtnDelete.Click += DeleteBtn_Click;
             // 
-            // UpdateBtn
+            // BtnUpdate
             // 
-            UpdateBtn.FlatStyle = FlatStyle.Popup;
-            UpdateBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            UpdateBtn.Location = new Point(754, 569);
-            UpdateBtn.Name = "UpdateBtn";
-            UpdateBtn.Size = new Size(95, 35);
-            UpdateBtn.TabIndex = 71;
-            UpdateBtn.Text = "UPDATE";
-            UpdateBtn.UseVisualStyleBackColor = true;
-            UpdateBtn.Click += UpdateBtn_Click;
+            BtnUpdate.FlatStyle = FlatStyle.Popup;
+            BtnUpdate.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            BtnUpdate.Location = new Point(673, 474);
+            BtnUpdate.Name = "BtnUpdate";
+            BtnUpdate.Size = new Size(95, 29);
+            BtnUpdate.TabIndex = 71;
+            BtnUpdate.Text = "UPDATE";
+            BtnUpdate.UseVisualStyleBackColor = true;
+            BtnUpdate.Click += UpdateBtn_Click;
             // 
-            // ReadBtn
+            // BtnRead
             // 
-            ReadBtn.FlatStyle = FlatStyle.Popup;
-            ReadBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            ReadBtn.Location = new Point(555, 569);
-            ReadBtn.Name = "ReadBtn";
-            ReadBtn.Size = new Size(95, 33);
-            ReadBtn.TabIndex = 70;
-            ReadBtn.Text = "READ";
-            ReadBtn.UseVisualStyleBackColor = true;
-            ReadBtn.Click += ReadBtn_Click;
+            BtnRead.FlatStyle = FlatStyle.Popup;
+            BtnRead.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            BtnRead.Location = new Point(526, 474);
+            BtnRead.Name = "BtnRead";
+            BtnRead.Size = new Size(95, 29);
+            BtnRead.TabIndex = 70;
+            BtnRead.Text = "READ";
+            BtnRead.UseVisualStyleBackColor = true;
+            BtnRead.Click += ReadBtn_Click;
             // 
-            // CreateBtn
+            // BtnInsert
             // 
-            CreateBtn.FlatStyle = FlatStyle.Popup;
-            CreateBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            CreateBtn.Location = new Point(380, 567);
-            CreateBtn.Name = "CreateBtn";
-            CreateBtn.Size = new Size(95, 35);
-            CreateBtn.TabIndex = 69;
-            CreateBtn.Text = "CREATE";
-            CreateBtn.UseVisualStyleBackColor = true;
-            CreateBtn.Click += CreateBtn_Click;
+            BtnInsert.FlatStyle = FlatStyle.Popup;
+            BtnInsert.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            BtnInsert.Location = new Point(380, 470);
+            BtnInsert.Name = "BtnInsert";
+            BtnInsert.Size = new Size(95, 33);
+            BtnInsert.TabIndex = 69;
+            BtnInsert.Text = "INSERT";
+            BtnInsert.UseVisualStyleBackColor = true;
+            BtnInsert.Click += CreateBtn_Click;
             // 
             // textBox1
             // 
             textBox1.BackColor = Color.Tan;
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(27, 342);
+            textBox1.Location = new Point(57, 265);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(155, 19);
             textBox1.TabIndex = 73;
@@ -172,9 +173,9 @@
             dataGridViewBtn.BackgroundColor = Color.AntiqueWhite;
             dataGridViewBtn.BorderStyle = BorderStyle.None;
             dataGridViewBtn.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewBtn.Location = new Point(380, 169);
+            dataGridViewBtn.Location = new Point(380, 197);
             dataGridViewBtn.Name = "dataGridViewBtn";
-            dataGridViewBtn.Size = new Size(635, 373);
+            dataGridViewBtn.Size = new Size(544, 265);
             dataGridViewBtn.TabIndex = 67;
             // 
             // textBox3
@@ -182,19 +183,29 @@
             textBox3.BackColor = Color.Tan;
             textBox3.BorderStyle = BorderStyle.None;
             textBox3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(27, 258);
+            textBox3.Location = new Point(57, 229);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(155, 19);
             textBox3.TabIndex = 80;
             textBox3.Text = "Room Code:";
             textBox3.TextAlign = HorizontalAlignment.Center;
             // 
+            // textBox4
+            // 
+            textBox4.BorderStyle = BorderStyle.None;
+            textBox4.Location = new Point(380, 175);
+            textBox4.Name = "textBox4";
+            textBox4.PlaceholderText = "Search here";
+            textBox4.Size = new Size(544, 16);
+            textBox4.TabIndex = 81;
+            // 
             // RoomsInfo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Tan;
-            ClientSize = new Size(1043, 627);
+            ClientSize = new Size(992, 571);
+            Controls.Add(textBox4);
             Controls.Add(CrossBtn);
             Controls.Add(textBox3);
             Controls.Add(textBox6);
@@ -202,10 +213,10 @@
             Controls.Add(RoomtypeBtn);
             Controls.Add(RoomcodeBtn);
             Controls.Add(textBox2);
-            Controls.Add(DeleteBtn);
-            Controls.Add(UpdateBtn);
-            Controls.Add(ReadBtn);
-            Controls.Add(CreateBtn);
+            Controls.Add(BtnDelete);
+            Controls.Add(BtnUpdate);
+            Controls.Add(BtnRead);
+            Controls.Add(BtnInsert);
             Controls.Add(textBox1);
             Controls.Add(dataGridViewBtn);
             FormBorderStyle = FormBorderStyle.None;
@@ -225,12 +236,13 @@
         private TextBox RoomtypeBtn;
         private TextBox RoomcodeBtn;
         private TextBox textBox2;
-        private Button DeleteBtn;
-        private Button UpdateBtn;
-        private Button ReadBtn;
-        private Button CreateBtn;
+        private Button BtnDelete;
+        private Button BtnUpdate;
+        private Button BtnRead;
+        private Button BtnInsert;
         private TextBox textBox1;
         private DataGridView dataGridViewBtn;
         private TextBox textBox3;
+        private TextBox textBox4;
     }
 }

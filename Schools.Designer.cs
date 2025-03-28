@@ -34,13 +34,14 @@
             SchoolcodeBtn = new TextBox();
             textBox3 = new TextBox();
             textBox2 = new TextBox();
-            DeleteBtn = new Button();
-            UpdateBtn = new Button();
-            ReadBtn = new Button();
-            CreateBtn = new Button();
+            BtnDelete = new Button();
+            BtnUpdate = new Button();
+            BtnEdit = new Button();
+            BtnCreate = new Button();
             textBox1 = new TextBox();
             dataGridViewBtn = new DataGridView();
             CrossBtn = new Button();
+            textBox4 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridViewBtn).BeginInit();
             SuspendLayout();
             // 
@@ -48,10 +49,10 @@
             // 
             textBox6.BackColor = Color.Tan;
             textBox6.BorderStyle = BorderStyle.None;
-            textBox6.Font = new Font("Microsoft Sans Serif", 26.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox6.Location = new Point(420, 104);
+            textBox6.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox6.Location = new Point(516, 127);
             textBox6.Name = "textBox6";
-            textBox6.Size = new Size(314, 40);
+            textBox6.Size = new Size(314, 33);
             textBox6.TabIndex = 79;
             textBox6.Text = "School Info";
             textBox6.TextAlign = HorizontalAlignment.Center;
@@ -59,27 +60,27 @@
             // ProfnumBtn
             // 
             ProfnumBtn.BorderStyle = BorderStyle.None;
-            ProfnumBtn.Location = new Point(173, 364);
+            ProfnumBtn.Location = new Point(92, 368);
             ProfnumBtn.Name = "ProfnumBtn";
-            ProfnumBtn.Size = new Size(100, 16);
+            ProfnumBtn.Size = new Size(241, 16);
             ProfnumBtn.TabIndex = 78;
             ProfnumBtn.TextChanged += ProfnumBtn_TextChanged;
             // 
             // SchoolnameBtn
             // 
             SchoolnameBtn.BorderStyle = BorderStyle.None;
-            SchoolnameBtn.Location = new Point(173, 294);
+            SchoolnameBtn.Location = new Point(92, 305);
             SchoolnameBtn.Name = "SchoolnameBtn";
-            SchoolnameBtn.Size = new Size(100, 16);
+            SchoolnameBtn.Size = new Size(241, 16);
             SchoolnameBtn.TabIndex = 77;
             SchoolnameBtn.TextChanged += SchoolnameBtn_TextChanged;
             // 
             // SchoolcodeBtn
             // 
             SchoolcodeBtn.BorderStyle = BorderStyle.None;
-            SchoolcodeBtn.Location = new Point(173, 214);
+            SchoolcodeBtn.Location = new Point(92, 243);
             SchoolcodeBtn.Name = "SchoolcodeBtn";
-            SchoolcodeBtn.Size = new Size(100, 16);
+            SchoolcodeBtn.Size = new Size(241, 16);
             SchoolcodeBtn.TabIndex = 76;
             SchoolcodeBtn.TextChanged += SchoolcodeBtn_TextChanged;
             // 
@@ -87,10 +88,10 @@
             // 
             textBox3.BackColor = Color.Tan;
             textBox3.BorderStyle = BorderStyle.None;
-            textBox3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(12, 210);
+            textBox3.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox3.Location = new Point(78, 218);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(155, 19);
+            textBox3.Size = new Size(155, 20);
             textBox3.TabIndex = 75;
             textBox3.Text = "School Code:";
             textBox3.TextAlign = HorizontalAlignment.Center;
@@ -99,70 +100,70 @@
             // 
             textBox2.BackColor = Color.Tan;
             textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(12, 361);
+            textBox2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox2.Location = new Point(56, 343);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(155, 19);
+            textBox2.Size = new Size(155, 20);
             textBox2.TabIndex = 74;
             textBox2.Text = "Prof Num:";
             textBox2.TextAlign = HorizontalAlignment.Center;
             // 
-            // DeleteBtn
+            // BtnDelete
             // 
-            DeleteBtn.FlatStyle = FlatStyle.Popup;
-            DeleteBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            DeleteBtn.Location = new Point(791, 543);
-            DeleteBtn.Name = "DeleteBtn";
-            DeleteBtn.Size = new Size(95, 33);
-            DeleteBtn.TabIndex = 72;
-            DeleteBtn.Text = "DELETE";
-            DeleteBtn.UseVisualStyleBackColor = true;
-            DeleteBtn.Click += DeleteBtn_Click;
+            BtnDelete.FlatStyle = FlatStyle.Popup;
+            BtnDelete.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            BtnDelete.Location = new Point(841, 495);
+            BtnDelete.Name = "BtnDelete";
+            BtnDelete.Size = new Size(95, 33);
+            BtnDelete.TabIndex = 72;
+            BtnDelete.Text = "DELETE";
+            BtnDelete.UseVisualStyleBackColor = true;
+            BtnDelete.Click += DeleteBtn_Click;
             // 
-            // UpdateBtn
+            // BtnUpdate
             // 
-            UpdateBtn.FlatStyle = FlatStyle.Popup;
-            UpdateBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            UpdateBtn.Location = new Point(618, 543);
-            UpdateBtn.Name = "UpdateBtn";
-            UpdateBtn.Size = new Size(95, 35);
-            UpdateBtn.TabIndex = 71;
-            UpdateBtn.Text = "UPDATE";
-            UpdateBtn.UseVisualStyleBackColor = true;
-            UpdateBtn.Click += UpdateBtn_Click;
+            BtnUpdate.FlatStyle = FlatStyle.Popup;
+            BtnUpdate.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            BtnUpdate.Location = new Point(689, 495);
+            BtnUpdate.Name = "BtnUpdate";
+            BtnUpdate.Size = new Size(95, 33);
+            BtnUpdate.TabIndex = 71;
+            BtnUpdate.Text = "UPDATE";
+            BtnUpdate.UseVisualStyleBackColor = true;
+            BtnUpdate.Click += UpdateBtn_Click;
             // 
-            // ReadBtn
+            // BtnEdit
             // 
-            ReadBtn.FlatStyle = FlatStyle.Popup;
-            ReadBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            ReadBtn.Location = new Point(460, 545);
-            ReadBtn.Name = "ReadBtn";
-            ReadBtn.Size = new Size(95, 33);
-            ReadBtn.TabIndex = 70;
-            ReadBtn.Text = "READ";
-            ReadBtn.UseVisualStyleBackColor = true;
-            ReadBtn.Click += ReadBtn_Click;
+            BtnEdit.FlatStyle = FlatStyle.Popup;
+            BtnEdit.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            BtnEdit.Location = new Point(539, 495);
+            BtnEdit.Name = "BtnEdit";
+            BtnEdit.Size = new Size(95, 33);
+            BtnEdit.TabIndex = 70;
+            BtnEdit.Text = "EDIT";
+            BtnEdit.UseVisualStyleBackColor = true;
+            BtnEdit.Click += ReadBtn_Click;
             // 
-            // CreateBtn
+            // BtnCreate
             // 
-            CreateBtn.FlatStyle = FlatStyle.Popup;
-            CreateBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            CreateBtn.Location = new Point(303, 545);
-            CreateBtn.Name = "CreateBtn";
-            CreateBtn.Size = new Size(95, 35);
-            CreateBtn.TabIndex = 69;
-            CreateBtn.Text = "CREATE";
-            CreateBtn.UseVisualStyleBackColor = true;
-            CreateBtn.Click += CreateBtn_Click;
+            BtnCreate.FlatStyle = FlatStyle.Popup;
+            BtnCreate.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            BtnCreate.Location = new Point(388, 495);
+            BtnCreate.Name = "BtnCreate";
+            BtnCreate.Size = new Size(95, 33);
+            BtnCreate.TabIndex = 69;
+            BtnCreate.Text = "CREATE";
+            BtnCreate.UseVisualStyleBackColor = true;
+            BtnCreate.Click += CreateBtn_Click;
             // 
             // textBox1
             // 
             textBox1.BackColor = Color.Tan;
             textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(12, 290);
+            textBox1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox1.Location = new Point(78, 280);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(155, 19);
+            textBox1.Size = new Size(155, 20);
             textBox1.TabIndex = 73;
             textBox1.Text = "School  Name:";
             textBox1.TextAlign = HorizontalAlignment.Center;
@@ -172,9 +173,9 @@
             dataGridViewBtn.BackgroundColor = Color.AntiqueWhite;
             dataGridViewBtn.BorderStyle = BorderStyle.None;
             dataGridViewBtn.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewBtn.Location = new Point(303, 179);
+            dataGridViewBtn.Location = new Point(388, 195);
             dataGridViewBtn.Name = "dataGridViewBtn";
-            dataGridViewBtn.Size = new Size(583, 336);
+            dataGridViewBtn.Size = new Size(548, 290);
             dataGridViewBtn.TabIndex = 67;
             dataGridViewBtn.CellContentClick += dataGridViewBtn_CellContentClick;
             // 
@@ -182,7 +183,7 @@
             // 
             CrossBtn.FlatStyle = FlatStyle.Popup;
             CrossBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            CrossBtn.Location = new Point(894, 1);
+            CrossBtn.Location = new Point(918, 0);
             CrossBtn.Name = "CrossBtn";
             CrossBtn.Size = new Size(75, 23);
             CrossBtn.TabIndex = 7;
@@ -190,12 +191,22 @@
             CrossBtn.UseVisualStyleBackColor = true;
             CrossBtn.Click += CrossBtn_Click;
             // 
+            // textBox4
+            // 
+            textBox4.BorderStyle = BorderStyle.None;
+            textBox4.Location = new Point(388, 173);
+            textBox4.Name = "textBox4";
+            textBox4.PlaceholderText = "Search here";
+            textBox4.Size = new Size(548, 16);
+            textBox4.TabIndex = 80;
+            // 
             // SchoolInfo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Tan;
-            ClientSize = new Size(965, 670);
+            ClientSize = new Size(992, 571);
+            Controls.Add(textBox4);
             Controls.Add(CrossBtn);
             Controls.Add(textBox6);
             Controls.Add(ProfnumBtn);
@@ -203,10 +214,10 @@
             Controls.Add(SchoolcodeBtn);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
-            Controls.Add(DeleteBtn);
-            Controls.Add(UpdateBtn);
-            Controls.Add(ReadBtn);
-            Controls.Add(CreateBtn);
+            Controls.Add(BtnDelete);
+            Controls.Add(BtnUpdate);
+            Controls.Add(BtnEdit);
+            Controls.Add(BtnCreate);
             Controls.Add(textBox1);
             Controls.Add(dataGridViewBtn);
             FormBorderStyle = FormBorderStyle.None;
@@ -225,12 +236,13 @@
         private TextBox SchoolcodeBtn;
         private TextBox textBox3;
         private TextBox textBox2;
-        private Button DeleteBtn;
-        private Button UpdateBtn;
-        private Button ReadBtn;
-        private Button CreateBtn;
+        private Button BtnDelete;
+        private Button BtnUpdate;
+        private Button BtnEdit;
+        private Button BtnCreate;
         private TextBox textBox1;
         private DataGridView dataGridViewBtn;
         private Button CrossBtn;
+        private TextBox textBox4;
     }
 }

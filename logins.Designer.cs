@@ -53,7 +53,7 @@
             textBox2.BackColor = Color.Tan;
             textBox2.BorderStyle = BorderStyle.None;
             textBox2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(269, 382);
+            textBox2.Location = new Point(269, 360);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(100, 19);
             textBox2.TabIndex = 1;
@@ -73,7 +73,7 @@
             // PasswordBtn
             // 
             PasswordBtn.BorderStyle = BorderStyle.None;
-            PasswordBtn.Location = new Point(388, 382);
+            PasswordBtn.Location = new Point(388, 360);
             PasswordBtn.Name = "PasswordBtn";
             PasswordBtn.Size = new Size(142, 16);
             PasswordBtn.TabIndex = 3;
@@ -85,7 +85,7 @@
             textBox3.BackColor = Color.Tan;
             textBox3.BorderStyle = BorderStyle.None;
             textBox3.Font = new Font("Segoe Script", 26.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(284, 184);
+            textBox3.Location = new Point(269, 67);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(305, 57);
             textBox3.TabIndex = 4;
@@ -95,7 +95,7 @@
             // 
             LoginBtn.FlatStyle = FlatStyle.Popup;
             LoginBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            LoginBtn.Location = new Point(416, 415);
+            LoginBtn.Location = new Point(414, 391);
             LoginBtn.Name = "LoginBtn";
             LoginBtn.Size = new Size(81, 33);
             LoginBtn.TabIndex = 5;
