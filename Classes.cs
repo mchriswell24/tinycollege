@@ -12,7 +12,9 @@ namespace tinycollege
 {
     public partial class ClassesInfo : Form
     {
-        private void ClassesInfo_Load(object sender, EventArgs e)
+        public ClassesInfo() =>
+        InitializeComponent();
+        public void ClassesInfo_Load(object sender, EventArgs e)
         {
 
         }

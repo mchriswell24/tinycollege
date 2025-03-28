@@ -16,12 +16,6 @@ namespace tinycollege
         {
             InitializeComponent();
         }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void CreateBtn_Click(object sender, EventArgs e)
         {
 

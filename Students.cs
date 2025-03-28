@@ -12,16 +12,14 @@ namespace tinycollege
 {
     public partial class StudentsInfo : Form
     {
-        private void StudentsInfo_Load(object sender, EventArgs e)
+        public StudentsInfo()
+        {
+            InitializeComponent();
+        }
+        public void StudentsInfo_Load(object sender, EventArgs e)
         {
 
         }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void CCBtn_TextChanged(object sender, EventArgs e)
         {
 

@@ -42,9 +42,7 @@
             ReadBtn = new Button();
             CreateBtn = new Button();
             textBox1 = new TextBox();
-            panel1 = new Panel();
             dataGridViewBtn = new DataGridView();
-            panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewBtn).BeginInit();
             SuspendLayout();
             // 
@@ -52,7 +50,7 @@
             // 
             CrossBtn.FlatStyle = FlatStyle.Popup;
             CrossBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            CrossBtn.Location = new Point(1102, 0);
+            CrossBtn.Location = new Point(1008, 0);
             CrossBtn.Name = "CrossBtn";
             CrossBtn.Size = new Size(75, 23);
             CrossBtn.TabIndex = 7;
@@ -202,15 +200,6 @@
             textBox1.Text = "Department Name:";
             textBox1.TextAlign = HorizontalAlignment.Center;
             // 
-            // panel1
-            // 
-            panel1.Controls.Add(CrossBtn);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1177, 105);
-            panel1.TabIndex = 36;
-            // 
             // dataGridViewBtn
             // 
             dataGridViewBtn.BackgroundColor = Color.AntiqueWhite;
@@ -226,7 +215,8 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Tan;
-            ClientSize = new Size(1177, 694);
+            ClientSize = new Size(1080, 694);
+            Controls.Add(CrossBtn);
             Controls.Add(textBox6);
             Controls.Add(ProfnumBtn);
             Controls.Add(ScBtn);
@@ -240,13 +230,11 @@
             Controls.Add(ReadBtn);
             Controls.Add(CreateBtn);
             Controls.Add(textBox1);
-            Controls.Add(panel1);
             Controls.Add(dataGridViewBtn);
             FormBorderStyle = FormBorderStyle.None;
             Name = "DeptInfo";
             Text = "DeptInfo";
             Load += DeptInfo_Load;
-            panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridViewBtn).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -268,7 +256,6 @@
         private Button ReadBtn;
         private Button CreateBtn;
         private TextBox textBox1;
-        private Panel panel1;
         private DataGridView dataGridViewBtn;
     }
 }

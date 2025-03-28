@@ -39,10 +39,8 @@
             ReadBtn = new Button();
             CreateBtn = new Button();
             textBox1 = new TextBox();
-            panel1 = new Panel();
             dataGridViewBtn = new DataGridView();
             textBox3 = new TextBox();
-            panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewBtn).BeginInit();
             SuspendLayout();
             // 
@@ -50,7 +48,7 @@
             // 
             CrossBtn.FlatStyle = FlatStyle.Popup;
             CrossBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            CrossBtn.Location = new Point(1102, 0);
+            CrossBtn.Location = new Point(969, 1);
             CrossBtn.Name = "CrossBtn";
             CrossBtn.Size = new Size(75, 23);
             CrossBtn.TabIndex = 7;
@@ -63,7 +61,7 @@
             textBox6.BackColor = Color.Tan;
             textBox6.BorderStyle = BorderStyle.None;
             textBox6.Font = new Font("Microsoft Sans Serif", 26.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox6.Location = new Point(580, 148);
+            textBox6.Location = new Point(535, 107);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(314, 40);
             textBox6.TabIndex = 79;
@@ -73,7 +71,7 @@
             // BuildingcodeBtn
             // 
             BuildingcodeBtn.BorderStyle = BorderStyle.None;
-            BuildingcodeBtn.Location = new Point(274, 484);
+            BuildingcodeBtn.Location = new Point(229, 443);
             BuildingcodeBtn.Name = "BuildingcodeBtn";
             BuildingcodeBtn.Size = new Size(100, 16);
             BuildingcodeBtn.TabIndex = 78;
@@ -82,7 +80,7 @@
             // RoomtypeBtn
             // 
             RoomtypeBtn.BorderStyle = BorderStyle.None;
-            RoomtypeBtn.Location = new Point(274, 387);
+            RoomtypeBtn.Location = new Point(229, 346);
             RoomtypeBtn.Name = "RoomtypeBtn";
             RoomtypeBtn.Size = new Size(100, 16);
             RoomtypeBtn.TabIndex = 77;
@@ -91,7 +89,7 @@
             // RoomcodeBtn
             // 
             RoomcodeBtn.BorderStyle = BorderStyle.None;
-            RoomcodeBtn.Location = new Point(274, 302);
+            RoomcodeBtn.Location = new Point(229, 261);
             RoomcodeBtn.Name = "RoomcodeBtn";
             RoomcodeBtn.Size = new Size(100, 16);
             RoomcodeBtn.TabIndex = 76;
@@ -102,7 +100,7 @@
             textBox2.BackColor = Color.Tan;
             textBox2.BorderStyle = BorderStyle.None;
             textBox2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(72, 481);
+            textBox2.Location = new Point(27, 440);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(155, 19);
             textBox2.TabIndex = 74;
@@ -113,7 +111,7 @@
             // 
             DeleteBtn.FlatStyle = FlatStyle.Popup;
             DeleteBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            DeleteBtn.Location = new Point(965, 610);
+            DeleteBtn.Location = new Point(920, 569);
             DeleteBtn.Name = "DeleteBtn";
             DeleteBtn.Size = new Size(95, 33);
             DeleteBtn.TabIndex = 72;
@@ -125,7 +123,7 @@
             // 
             UpdateBtn.FlatStyle = FlatStyle.Popup;
             UpdateBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            UpdateBtn.Location = new Point(799, 610);
+            UpdateBtn.Location = new Point(754, 569);
             UpdateBtn.Name = "UpdateBtn";
             UpdateBtn.Size = new Size(95, 35);
             UpdateBtn.TabIndex = 71;
@@ -137,7 +135,7 @@
             // 
             ReadBtn.FlatStyle = FlatStyle.Popup;
             ReadBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            ReadBtn.Location = new Point(600, 610);
+            ReadBtn.Location = new Point(555, 569);
             ReadBtn.Name = "ReadBtn";
             ReadBtn.Size = new Size(95, 33);
             ReadBtn.TabIndex = 70;
@@ -149,7 +147,7 @@
             // 
             CreateBtn.FlatStyle = FlatStyle.Popup;
             CreateBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            CreateBtn.Location = new Point(425, 608);
+            CreateBtn.Location = new Point(380, 567);
             CreateBtn.Name = "CreateBtn";
             CreateBtn.Size = new Size(95, 35);
             CreateBtn.TabIndex = 69;
@@ -162,28 +160,19 @@
             textBox1.BackColor = Color.Tan;
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(72, 383);
+            textBox1.Location = new Point(27, 342);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(155, 19);
             textBox1.TabIndex = 73;
             textBox1.Text = "Room Type:";
             textBox1.TextAlign = HorizontalAlignment.Center;
             // 
-            // panel1
-            // 
-            panel1.Controls.Add(CrossBtn);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1177, 105);
-            panel1.TabIndex = 68;
-            // 
             // dataGridViewBtn
             // 
             dataGridViewBtn.BackgroundColor = Color.AntiqueWhite;
             dataGridViewBtn.BorderStyle = BorderStyle.None;
             dataGridViewBtn.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewBtn.Location = new Point(425, 210);
+            dataGridViewBtn.Location = new Point(380, 169);
             dataGridViewBtn.Name = "dataGridViewBtn";
             dataGridViewBtn.Size = new Size(635, 373);
             dataGridViewBtn.TabIndex = 67;
@@ -193,7 +182,7 @@
             textBox3.BackColor = Color.Tan;
             textBox3.BorderStyle = BorderStyle.None;
             textBox3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(72, 299);
+            textBox3.Location = new Point(27, 258);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(155, 19);
             textBox3.TabIndex = 80;
@@ -205,7 +194,8 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Tan;
-            ClientSize = new Size(1177, 673);
+            ClientSize = new Size(1043, 627);
+            Controls.Add(CrossBtn);
             Controls.Add(textBox3);
             Controls.Add(textBox6);
             Controls.Add(BuildingcodeBtn);
@@ -217,13 +207,11 @@
             Controls.Add(ReadBtn);
             Controls.Add(CreateBtn);
             Controls.Add(textBox1);
-            Controls.Add(panel1);
             Controls.Add(dataGridViewBtn);
             FormBorderStyle = FormBorderStyle.None;
             Name = "RoomsInfo";
             Text = "Rooms";
             Load += RoomsInfo_Load;
-            panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridViewBtn).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -242,7 +230,6 @@
         private Button ReadBtn;
         private Button CreateBtn;
         private TextBox textBox1;
-        private Panel panel1;
         private DataGridView dataGridViewBtn;
         private TextBox textBox3;
     }

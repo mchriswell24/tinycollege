@@ -32,7 +32,7 @@ namespace tinycollege
 
         }
 
-        private void Buildings_Load(object sender, EventArgs e)
+        public void Buildings_Load(object sender, EventArgs e)
         {
 
         }

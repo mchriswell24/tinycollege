@@ -27,7 +27,7 @@ namespace tinycollege
 
         }
 
-        private void DeptInfo_Load(object sender, EventArgs e)
+        public void DeptInfo_Load(object sender, EventArgs e)
         {
 
         }

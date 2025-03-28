@@ -22,7 +22,7 @@ namespace tinycollege
 
         }
 
-        private void CoursesInfo_Load(object sender, EventArgs e)
+        public void CoursesInfo_Load(object sender, EventArgs e)
         {
 
         }

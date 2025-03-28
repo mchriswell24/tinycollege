@@ -43,10 +43,8 @@
             ReadBtn = new Button();
             CreateBtn = new Button();
             textBox1 = new TextBox();
-            panel1 = new Panel();
             CrossBtn = new Button();
             dataGridViewBtn = new DataGridView();
-            panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewBtn).BeginInit();
             SuspendLayout();
             // 
@@ -219,20 +217,11 @@
             textBox1.Text = "Depatment Code:";
             textBox1.TextAlign = HorizontalAlignment.Center;
             // 
-            // panel1
-            // 
-            panel1.Controls.Add(CrossBtn);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1101, 105);
-            panel1.TabIndex = 74;
-            // 
             // CrossBtn
             // 
             CrossBtn.FlatStyle = FlatStyle.Popup;
             CrossBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            CrossBtn.Location = new Point(1003, 0);
+            CrossBtn.Location = new Point(960, 2);
             CrossBtn.Name = "CrossBtn";
             CrossBtn.Size = new Size(101, 40);
             CrossBtn.TabIndex = 7;
@@ -256,7 +245,8 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Tan;
-            ClientSize = new Size(1101, 717);
+            ClientSize = new Size(1058, 717);
+            Controls.Add(CrossBtn);
             Controls.Add(textBox6);
             Controls.Add(CreditsBtn);
             Controls.Add(CoursedescBtn);
@@ -272,13 +262,11 @@
             Controls.Add(ReadBtn);
             Controls.Add(CreateBtn);
             Controls.Add(textBox1);
-            Controls.Add(panel1);
             Controls.Add(dataGridViewBtn);
             FormBorderStyle = FormBorderStyle.None;
             Name = "CoursesInfo";
             Text = "CoursesInfo";
             Load += CoursesInfo_Load;
-            panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridViewBtn).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -300,7 +288,6 @@
         private Button ReadBtn;
         private Button CreateBtn;
         private TextBox textBox1;
-        private Panel panel1;
         private Button CrossBtn;
         private DataGridView dataGridViewBtn;
     }

@@ -17,7 +17,7 @@ namespace tinycollege
             InitializeComponent();
         }
 
-        private void TeachersInfo_Load(object sender, EventArgs e)
+        public void TeachersInfo_Load(object sender, EventArgs e)
         {
 
         }
