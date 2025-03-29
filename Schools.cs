@@ -24,6 +24,10 @@ namespace tinycollege
 
         private void CrossBtn_Click(object sender, EventArgs e)
         {
+            Profes profesForm = new Profes();
+            profesForm.Show();
+
+            // Close the current RoomsInfo form
             this.Close();
         }
 
@@ -63,6 +67,51 @@ namespace tinycollege
         }
 
         private void ProfnumBtn_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SemesterBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RoomBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ProfessorBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DepartmentBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BuildingBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StudentBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CourseBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SchoolBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ClassBtn_Click(object sender, EventArgs e)
         {
 
         }

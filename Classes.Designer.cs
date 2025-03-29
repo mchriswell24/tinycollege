@@ -47,6 +47,16 @@
             textBox1 = new TextBox();
             dataGridViewBtn = new DataGridView();
             textBox8 = new TextBox();
+            CrossBtn = new Button();
+            RoomBtn = new Button();
+            SemesterBtn = new Button();
+            ProfessorBtn = new Button();
+            DepartmentBtn = new Button();
+            BuildingBtn = new Button();
+            StudentBtn = new Button();
+            CourseBtn = new Button();
+            ClassBtn = new Button();
+            SchoolBtn = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewBtn).BeginInit();
             SuspendLayout();
             // 
@@ -252,12 +262,142 @@
             textBox8.Size = new Size(523, 16);
             textBox8.TabIndex = 73;
             // 
+            // CrossBtn
+            // 
+            CrossBtn.FlatStyle = FlatStyle.Popup;
+            CrossBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            CrossBtn.Location = new Point(916, 1);
+            CrossBtn.Name = "CrossBtn";
+            CrossBtn.Size = new Size(75, 23);
+            CrossBtn.TabIndex = 74;
+            CrossBtn.Text = "X";
+            CrossBtn.UseVisualStyleBackColor = true;
+            CrossBtn.Click += CrossBtn_Click_1;
+            // 
+            // RoomBtn
+            // 
+            RoomBtn.FlatStyle = FlatStyle.Popup;
+            RoomBtn.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            RoomBtn.Location = new Point(792, 45);
+            RoomBtn.Name = "RoomBtn";
+            RoomBtn.Size = new Size(102, 26);
+            RoomBtn.TabIndex = 114;
+            RoomBtn.Text = "ROOM";
+            RoomBtn.UseVisualStyleBackColor = true;
+            RoomBtn.Click += RoomBtn_Click;
+            // 
+            // SemesterBtn
+            // 
+            SemesterBtn.FlatStyle = FlatStyle.Popup;
+            SemesterBtn.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            SemesterBtn.Location = new Point(618, 22);
+            SemesterBtn.Name = "SemesterBtn";
+            SemesterBtn.Size = new Size(144, 26);
+            SemesterBtn.TabIndex = 116;
+            SemesterBtn.Text = "SEMESTER";
+            SemesterBtn.UseVisualStyleBackColor = true;
+            SemesterBtn.Click += SemesterBtn_Click;
+            // 
+            // ProfessorBtn
+            // 
+            ProfessorBtn.FlatStyle = FlatStyle.Popup;
+            ProfessorBtn.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            ProfessorBtn.Location = new Point(618, 79);
+            ProfessorBtn.Name = "ProfessorBtn";
+            ProfessorBtn.Size = new Size(144, 26);
+            ProfessorBtn.TabIndex = 117;
+            ProfessorBtn.Text = "PROFESSOR";
+            ProfessorBtn.UseVisualStyleBackColor = true;
+            ProfessorBtn.Click += ProfessorBtn_Click;
+            // 
+            // DepartmentBtn
+            // 
+            DepartmentBtn.FlatStyle = FlatStyle.Popup;
+            DepartmentBtn.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            DepartmentBtn.Location = new Point(414, 22);
+            DepartmentBtn.Name = "DepartmentBtn";
+            DepartmentBtn.Size = new Size(144, 26);
+            DepartmentBtn.TabIndex = 118;
+            DepartmentBtn.Text = "DEPARTMENT";
+            DepartmentBtn.UseVisualStyleBackColor = true;
+            DepartmentBtn.Click += DepartmentBtn_Click;
+            // 
+            // BuildingBtn
+            // 
+            BuildingBtn.FlatStyle = FlatStyle.Popup;
+            BuildingBtn.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            BuildingBtn.Location = new Point(414, 79);
+            BuildingBtn.Name = "BuildingBtn";
+            BuildingBtn.Size = new Size(144, 26);
+            BuildingBtn.TabIndex = 119;
+            BuildingBtn.Text = "BUILDING";
+            BuildingBtn.UseVisualStyleBackColor = true;
+            BuildingBtn.Click += BuildingBtn_Click;
+            // 
+            // StudentBtn
+            // 
+            StudentBtn.FlatStyle = FlatStyle.Popup;
+            StudentBtn.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            StudentBtn.Location = new Point(223, 22);
+            StudentBtn.Name = "StudentBtn";
+            StudentBtn.Size = new Size(108, 26);
+            StudentBtn.TabIndex = 120;
+            StudentBtn.Text = "STUDENT";
+            StudentBtn.UseVisualStyleBackColor = true;
+            StudentBtn.Click += StudentBtn_Click;
+            // 
+            // CourseBtn
+            // 
+            CourseBtn.FlatStyle = FlatStyle.Popup;
+            CourseBtn.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            CourseBtn.Location = new Point(223, 79);
+            CourseBtn.Name = "CourseBtn";
+            CourseBtn.Size = new Size(108, 26);
+            CourseBtn.TabIndex = 121;
+            CourseBtn.Text = "COURSE";
+            CourseBtn.UseVisualStyleBackColor = true;
+            CourseBtn.Click += CourseBtn_Click;
+            // 
+            // ClassBtn
+            // 
+            ClassBtn.FlatStyle = FlatStyle.Popup;
+            ClassBtn.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            ClassBtn.Location = new Point(65, 22);
+            ClassBtn.Name = "ClassBtn";
+            ClassBtn.Size = new Size(102, 26);
+            ClassBtn.TabIndex = 122;
+            ClassBtn.Text = "CLASS";
+            ClassBtn.UseVisualStyleBackColor = true;
+            ClassBtn.Click += ClassBtn_Click;
+            // 
+            // SchoolBtn
+            // 
+            SchoolBtn.FlatStyle = FlatStyle.Popup;
+            SchoolBtn.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            SchoolBtn.Location = new Point(65, 79);
+            SchoolBtn.Name = "SchoolBtn";
+            SchoolBtn.Size = new Size(102, 26);
+            SchoolBtn.TabIndex = 123;
+            SchoolBtn.Text = "SCHOOL";
+            SchoolBtn.UseVisualStyleBackColor = true;
+            SchoolBtn.Click += SchoolBtn_Click;
+            // 
             // ClassesInfo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Tan;
             ClientSize = new Size(992, 571);
+            Controls.Add(SchoolBtn);
+            Controls.Add(ClassBtn);
+            Controls.Add(CourseBtn);
+            Controls.Add(StudentBtn);
+            Controls.Add(BuildingBtn);
+            Controls.Add(DepartmentBtn);
+            Controls.Add(ProfessorBtn);
+            Controls.Add(SemesterBtn);
+            Controls.Add(RoomBtn);
+            Controls.Add(CrossBtn);
             Controls.Add(textBox8);
             Controls.Add(SemcodeBtn);
             Controls.Add(textBox7);
@@ -307,5 +447,15 @@
         private TextBox textBox1;
         private DataGridView dataGridViewBtn;
         private TextBox textBox8;
+        private Button CrossBtn;
+        private Button RoomBtn;
+        private Button SemesterBtn;
+        private Button ProfessorBtn;
+        private Button DepartmentBtn;
+        private Button BuildingBtn;
+        private Button StudentBtn;
+        private Button CourseBtn;
+        private Button ClassBtn;
+        private Button SchoolBtn;
     }
 }

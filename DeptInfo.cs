@@ -54,7 +54,52 @@ namespace tinycollege
 
         private void CrossBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+
+        }
+
+        private void RoomBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ProfessorBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SemesterBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DepartmentBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BuildingBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CourseBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StudentBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ClassBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SchoolBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

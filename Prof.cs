@@ -93,9 +93,13 @@ namespace tinycollege
 
         private void SemesterBtn_Click(object sender, EventArgs e)
         {
-           Semesters Form = new Semesters();
+            Semesters Form = new Semesters();
             Form.Show();
             this.Hide();
+        }
+        private void xBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

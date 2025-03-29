@@ -53,10 +53,24 @@ namespace tinycollege
 
         private void CrossBtn_Click(object sender, EventArgs e)
         {
+            Profes profesForm = new Profes();
+            profesForm.Show();
+
+            // Close the current RoomsInfo form
             this.Close();
         }
 
         private void RoomsInfo_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RoomsInfo_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+        }
+
+        private void SchoolBtn_Click(object sender, EventArgs e)
         {
 
         }
