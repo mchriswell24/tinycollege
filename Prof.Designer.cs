@@ -32,7 +32,7 @@
             dataGridViewBtn = new DataGridView();
             CrossBtn = new Button();
             CreateBtn = new Button();
-            ReadBtn = new Button();
+            EditBtn = new Button();
             UpdateBtn = new Button();
             DeleteBtn = new Button();
             textBox1 = new TextBox();
@@ -67,7 +67,7 @@
             dataGridViewBtn.BackgroundColor = Color.AntiqueWhite;
             dataGridViewBtn.BorderStyle = BorderStyle.None;
             dataGridViewBtn.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewBtn.Location = new Point(323, 221);
+            dataGridViewBtn.Location = new Point(369, 221);
             dataGridViewBtn.Name = "dataGridViewBtn";
             dataGridViewBtn.Size = new Size(527, 296);
             dataGridViewBtn.TabIndex = 0;
@@ -88,8 +88,8 @@
             // CreateBtn
             // 
             CreateBtn.FlatStyle = FlatStyle.Popup;
-            CreateBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            CreateBtn.Location = new Point(323, 533);
+            CreateBtn.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            CreateBtn.Location = new Point(369, 533);
             CreateBtn.Name = "CreateBtn";
             CreateBtn.Size = new Size(101, 25);
             CreateBtn.TabIndex = 4;
@@ -97,22 +97,22 @@
             CreateBtn.UseVisualStyleBackColor = true;
             CreateBtn.Click += CreateBtn_Click;
             // 
-            // ReadBtn
+            // EditBtn
             // 
-            ReadBtn.FlatStyle = FlatStyle.Popup;
-            ReadBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            ReadBtn.Location = new Point(458, 533);
-            ReadBtn.Name = "ReadBtn";
-            ReadBtn.Size = new Size(110, 25);
-            ReadBtn.TabIndex = 5;
-            ReadBtn.Text = "READ";
-            ReadBtn.UseVisualStyleBackColor = true;
+            EditBtn.FlatStyle = FlatStyle.Popup;
+            EditBtn.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            EditBtn.Location = new Point(507, 534);
+            EditBtn.Name = "EditBtn";
+            EditBtn.Size = new Size(110, 25);
+            EditBtn.TabIndex = 5;
+            EditBtn.Text = "EDIT";
+            EditBtn.UseVisualStyleBackColor = true;
             // 
             // UpdateBtn
             // 
             UpdateBtn.FlatStyle = FlatStyle.Popup;
-            UpdateBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            UpdateBtn.Location = new Point(612, 533);
+            UpdateBtn.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            UpdateBtn.Location = new Point(661, 534);
             UpdateBtn.Name = "UpdateBtn";
             UpdateBtn.Size = new Size(95, 25);
             UpdateBtn.TabIndex = 6;
@@ -122,8 +122,8 @@
             // DeleteBtn
             // 
             DeleteBtn.FlatStyle = FlatStyle.Popup;
-            DeleteBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            DeleteBtn.Location = new Point(754, 533);
+            DeleteBtn.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            DeleteBtn.Location = new Point(801, 533);
             DeleteBtn.Name = "DeleteBtn";
             DeleteBtn.Size = new Size(95, 25);
             DeleteBtn.TabIndex = 7;
@@ -135,7 +135,7 @@
             textBox1.BackColor = Color.Tan;
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold);
-            textBox1.Location = new Point(32, 277);
+            textBox1.Location = new Point(47, 221);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(127, 17);
             textBox1.TabIndex = 8;
@@ -147,9 +147,9 @@
             textBox2.BackColor = Color.Tan;
             textBox2.BorderStyle = BorderStyle.None;
             textBox2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            textBox2.Location = new Point(20, 341);
+            textBox2.Location = new Point(45, 320);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(127, 20);
+            textBox2.Size = new Size(102, 20);
             textBox2.TabIndex = 9;
             textBox2.Text = "Class Code:";
             textBox2.TextAlign = HorizontalAlignment.Center;
@@ -159,7 +159,7 @@
             textBox3.BackColor = Color.Tan;
             textBox3.BorderStyle = BorderStyle.None;
             textBox3.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            textBox3.Location = new Point(16, 410);
+            textBox3.Location = new Point(47, 433);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(143, 20);
             textBox3.TabIndex = 10;
@@ -171,7 +171,7 @@
             textBox4.BackColor = Color.Tan;
             textBox4.BorderStyle = BorderStyle.None;
             textBox4.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            textBox4.Location = new Point(16, 375);
+            textBox4.Location = new Point(45, 375);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(143, 20);
             textBox4.TabIndex = 11;
@@ -183,7 +183,7 @@
             textBox5.BackColor = Color.Tan;
             textBox5.BorderStyle = BorderStyle.None;
             textBox5.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            textBox5.Location = new Point(20, 308);
+            textBox5.Location = new Point(47, 266);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(155, 20);
             textBox5.TabIndex = 12;
@@ -193,30 +193,30 @@
             // EIDBtn
             // 
             EIDBtn.BorderStyle = BorderStyle.None;
-            EIDBtn.Location = new Point(195, 277);
+            EIDBtn.Location = new Point(47, 244);
             EIDBtn.Name = "EIDBtn";
-            EIDBtn.Size = new Size(100, 16);
+            EIDBtn.Size = new Size(248, 16);
             EIDBtn.TabIndex = 13;
             // 
             // StNBtn
             // 
-            StNBtn.Location = new Point(195, 308);
+            StNBtn.Location = new Point(47, 292);
             StNBtn.Name = "StNBtn";
-            StNBtn.Size = new Size(100, 23);
+            StNBtn.Size = new Size(248, 23);
             StNBtn.TabIndex = 14;
             // 
             // CCBtn
             // 
-            CCBtn.Location = new Point(195, 342);
+            CCBtn.Location = new Point(47, 346);
             CCBtn.Name = "CCBtn";
-            CCBtn.Size = new Size(100, 23);
+            CCBtn.Size = new Size(248, 23);
             CCBtn.TabIndex = 15;
             // 
             // EnGBtn
             // 
-            EnGBtn.Location = new Point(195, 411);
+            EnGBtn.Location = new Point(47, 459);
             EnGBtn.Name = "EnGBtn";
-            EnGBtn.Size = new Size(100, 23);
+            EnGBtn.Size = new Size(250, 23);
             EnGBtn.TabIndex = 17;
             // 
             // textBox6
@@ -224,7 +224,7 @@
             textBox6.BackColor = Color.Tan;
             textBox6.BorderStyle = BorderStyle.None;
             textBox6.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox6.Location = new Point(458, 151);
+            textBox6.Location = new Point(507, 149);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(249, 33);
             textBox6.TabIndex = 18;
@@ -235,7 +235,7 @@
             // 
             ClassBtn.FlatStyle = FlatStyle.Popup;
             ClassBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            ClassBtn.Location = new Point(57, 59);
+            ClassBtn.Location = new Point(112, 59);
             ClassBtn.Name = "ClassBtn";
             ClassBtn.Size = new Size(102, 26);
             ClassBtn.TabIndex = 19;
@@ -247,7 +247,7 @@
             // 
             ProfessorBtn.FlatStyle = FlatStyle.Popup;
             ProfessorBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            ProfessorBtn.Location = new Point(534, 103);
+            ProfessorBtn.Location = new Point(612, 103);
             ProfessorBtn.Name = "ProfessorBtn";
             ProfessorBtn.Size = new Size(144, 26);
             ProfessorBtn.TabIndex = 20;
@@ -259,7 +259,7 @@
             // 
             DepartmentBtn.FlatStyle = FlatStyle.Popup;
             DepartmentBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            DepartmentBtn.Location = new Point(343, 59);
+            DepartmentBtn.Location = new Point(424, 59);
             DepartmentBtn.Name = "DepartmentBtn";
             DepartmentBtn.Size = new Size(144, 26);
             DepartmentBtn.TabIndex = 21;
@@ -271,7 +271,7 @@
             // 
             SemesterBtn.FlatStyle = FlatStyle.Popup;
             SemesterBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            SemesterBtn.Location = new Point(534, 59);
+            SemesterBtn.Location = new Point(612, 59);
             SemesterBtn.Name = "SemesterBtn";
             SemesterBtn.Size = new Size(144, 26);
             SemesterBtn.TabIndex = 22;
@@ -283,7 +283,7 @@
             // 
             CourseBtn.FlatStyle = FlatStyle.Popup;
             CourseBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            CourseBtn.Location = new Point(193, 103);
+            CourseBtn.Location = new Point(273, 103);
             CourseBtn.Name = "CourseBtn";
             CourseBtn.Size = new Size(102, 26);
             CourseBtn.TabIndex = 23;
@@ -295,7 +295,7 @@
             // 
             StudentBtn.FlatStyle = FlatStyle.Popup;
             StudentBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            StudentBtn.Location = new Point(195, 59);
+            StudentBtn.Location = new Point(273, 59);
             StudentBtn.Name = "StudentBtn";
             StudentBtn.Size = new Size(102, 26);
             StudentBtn.TabIndex = 24;
@@ -307,7 +307,7 @@
             // 
             BuildingBtn.FlatStyle = FlatStyle.Popup;
             BuildingBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            BuildingBtn.Location = new Point(343, 103);
+            BuildingBtn.Location = new Point(424, 103);
             BuildingBtn.Name = "BuildingBtn";
             BuildingBtn.Size = new Size(144, 26);
             BuildingBtn.TabIndex = 25;
@@ -319,7 +319,7 @@
             // 
             RoomBtn.FlatStyle = FlatStyle.Popup;
             RoomBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            RoomBtn.Location = new Point(725, 83);
+            RoomBtn.Location = new Point(794, 82);
             RoomBtn.Name = "RoomBtn";
             RoomBtn.Size = new Size(102, 26);
             RoomBtn.TabIndex = 26;
@@ -331,7 +331,7 @@
             // 
             SchoolBtn.FlatStyle = FlatStyle.Popup;
             SchoolBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            SchoolBtn.Location = new Point(57, 103);
+            SchoolBtn.Location = new Point(112, 103);
             SchoolBtn.Name = "SchoolBtn";
             SchoolBtn.Size = new Size(102, 26);
             SchoolBtn.TabIndex = 28;
@@ -341,15 +341,15 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(195, 375);
+            dateTimePicker1.Location = new Point(45, 404);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(100, 23);
+            dateTimePicker1.Size = new Size(250, 23);
             dateTimePicker1.TabIndex = 29;
             // 
             // textBox7
             // 
             textBox7.BorderStyle = BorderStyle.None;
-            textBox7.Location = new Point(323, 199);
+            textBox7.Location = new Point(369, 199);
             textBox7.Name = "textBox7";
             textBox7.PlaceholderText = "Search here";
             textBox7.Size = new Size(527, 16);
@@ -359,7 +359,7 @@
             // 
             xBtn.FlatStyle = FlatStyle.Popup;
             xBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            xBtn.Location = new Point(848, -1);
+            xBtn.Location = new Point(917, 0);
             xBtn.Name = "xBtn";
             xBtn.Size = new Size(75, 23);
             xBtn.TabIndex = 76;
@@ -372,7 +372,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Tan;
-            ClientSize = new Size(924, 581);
+            ClientSize = new Size(992, 571);
             Controls.Add(xBtn);
             Controls.Add(textBox7);
             Controls.Add(dateTimePicker1);
@@ -398,7 +398,7 @@
             Controls.Add(textBox1);
             Controls.Add(DeleteBtn);
             Controls.Add(UpdateBtn);
-            Controls.Add(ReadBtn);
+            Controls.Add(EditBtn);
             Controls.Add(CreateBtn);
             Controls.Add(dataGridViewBtn);
             FormBorderStyle = FormBorderStyle.None;
@@ -416,7 +416,7 @@
         private DataGridView dataGridViewBtn;
         private Button CrossBtn;
         private Button CreateBtn;
-        private Button ReadBtn;
+        private Button EditBtn;
         private Button UpdateBtn;
         private Button DeleteBtn;
         private TextBox textBox1;

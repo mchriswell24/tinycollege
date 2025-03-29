@@ -37,8 +37,8 @@
             textBox2 = new TextBox();
             BtnDelete = new Button();
             BtnUpdate = new Button();
-            BtnRead = new Button();
-            BtnInsert = new Button();
+            BtnEdit = new Button();
+            BtnCreate = new Button();
             textBox1 = new TextBox();
             dataGridViewBtn = new DataGridView();
             textBox4 = new TextBox();
@@ -81,7 +81,7 @@
             // buildinglocBtn
             // 
             buildinglocBtn.BorderStyle = BorderStyle.None;
-            buildinglocBtn.Location = new Point(69, 360);
+            buildinglocBtn.Location = new Point(69, 324);
             buildinglocBtn.Name = "buildinglocBtn";
             buildinglocBtn.Size = new Size(253, 16);
             buildinglocBtn.TabIndex = 64;
@@ -89,7 +89,7 @@
             // BuildingnameBtn
             // 
             BuildingnameBtn.BorderStyle = BorderStyle.None;
-            BuildingnameBtn.Location = new Point(69, 299);
+            BuildingnameBtn.Location = new Point(69, 276);
             BuildingnameBtn.Name = "BuildingnameBtn";
             BuildingnameBtn.Size = new Size(253, 16);
             BuildingnameBtn.TabIndex = 63;
@@ -107,7 +107,7 @@
             textBox3.BackColor = Color.Tan;
             textBox3.BorderStyle = BorderStyle.None;
             textBox3.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(107, 202);
+            textBox3.Location = new Point(47, 202);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(155, 20);
             textBox3.TabIndex = 60;
@@ -119,7 +119,7 @@
             textBox2.BackColor = Color.Tan;
             textBox2.BorderStyle = BorderStyle.None;
             textBox2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(107, 321);
+            textBox2.Location = new Point(57, 298);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(145, 20);
             textBox2.TabIndex = 59;
@@ -150,36 +150,36 @@
             BtnUpdate.UseVisualStyleBackColor = true;
             BtnUpdate.Click += UpdateBtn_Click;
             // 
-            // BtnRead
+            // BtnEdit
             // 
-            BtnRead.FlatStyle = FlatStyle.Popup;
-            BtnRead.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            BtnRead.Location = new Point(492, 504);
-            BtnRead.Name = "BtnRead";
-            BtnRead.Size = new Size(95, 33);
-            BtnRead.TabIndex = 55;
-            BtnRead.Text = "READ";
-            BtnRead.UseVisualStyleBackColor = true;
-            BtnRead.Click += ReadBtn_Click;
+            BtnEdit.FlatStyle = FlatStyle.Popup;
+            BtnEdit.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            BtnEdit.Location = new Point(492, 504);
+            BtnEdit.Name = "BtnEdit";
+            BtnEdit.Size = new Size(95, 33);
+            BtnEdit.TabIndex = 55;
+            BtnEdit.Text = "EDIT";
+            BtnEdit.UseVisualStyleBackColor = true;
+            BtnEdit.Click += ReadBtn_Click;
             // 
-            // BtnInsert
+            // BtnCreate
             // 
-            BtnInsert.FlatStyle = FlatStyle.Popup;
-            BtnInsert.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            BtnInsert.Location = new Point(352, 504);
-            BtnInsert.Name = "BtnInsert";
-            BtnInsert.Size = new Size(95, 33);
-            BtnInsert.TabIndex = 54;
-            BtnInsert.Text = "INSERT";
-            BtnInsert.UseVisualStyleBackColor = true;
-            BtnInsert.Click += CreateBtn_Click;
+            BtnCreate.FlatStyle = FlatStyle.Popup;
+            BtnCreate.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            BtnCreate.Location = new Point(352, 504);
+            BtnCreate.Name = "BtnCreate";
+            BtnCreate.Size = new Size(95, 33);
+            BtnCreate.TabIndex = 54;
+            BtnCreate.Text = "CREATE";
+            BtnCreate.UseVisualStyleBackColor = true;
+            BtnCreate.Click += CreateBtn_Click;
             // 
             // textBox1
             // 
             textBox1.BackColor = Color.Tan;
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(107, 260);
+            textBox1.Location = new Point(47, 250);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(155, 20);
             textBox1.TabIndex = 58;
@@ -339,8 +339,8 @@
             Controls.Add(textBox2);
             Controls.Add(BtnDelete);
             Controls.Add(BtnUpdate);
-            Controls.Add(BtnRead);
-            Controls.Add(BtnInsert);
+            Controls.Add(BtnEdit);
+            Controls.Add(BtnCreate);
             Controls.Add(textBox1);
             Controls.Add(dataGridViewBtn);
             FormBorderStyle = FormBorderStyle.None;
@@ -363,8 +363,8 @@
         private TextBox textBox2;
         private Button BtnDelete;
         private Button BtnUpdate;
-        private Button BtnRead;
-        private Button BtnInsert;
+        private Button BtnEdit;
+        private Button BtnCreate;
         private TextBox textBox1;
         private DataGridView dataGridViewBtn;
         private TextBox textBox4;

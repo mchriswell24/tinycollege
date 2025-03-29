@@ -69,7 +69,7 @@
             // ProfnumBtn
             // 
             ProfnumBtn.BorderStyle = BorderStyle.None;
-            ProfnumBtn.Location = new Point(42, 395);
+            ProfnumBtn.Location = new Point(42, 385);
             ProfnumBtn.Name = "ProfnumBtn";
             ProfnumBtn.Size = new Size(241, 16);
             ProfnumBtn.TabIndex = 78;
@@ -78,7 +78,7 @@
             // SchoolnameBtn
             // 
             SchoolnameBtn.BorderStyle = BorderStyle.None;
-            SchoolnameBtn.Location = new Point(42, 334);
+            SchoolnameBtn.Location = new Point(42, 321);
             SchoolnameBtn.Name = "SchoolnameBtn";
             SchoolnameBtn.Size = new Size(241, 16);
             SchoolnameBtn.TabIndex = 77;
@@ -98,7 +98,7 @@
             textBox3.BackColor = Color.Tan;
             textBox3.BorderStyle = BorderStyle.None;
             textBox3.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(85, 223);
+            textBox3.Location = new Point(12, 235);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(155, 20);
             textBox3.TabIndex = 75;
@@ -110,9 +110,9 @@
             textBox2.BackColor = Color.Tan;
             textBox2.BorderStyle = BorderStyle.None;
             textBox2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(85, 356);
+            textBox2.Location = new Point(42, 356);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(155, 20);
+            textBox2.Size = new Size(77, 20);
             textBox2.TabIndex = 74;
             textBox2.Text = "Prof Num:";
             textBox2.TextAlign = HorizontalAlignment.Center;
@@ -170,9 +170,9 @@
             textBox1.BackColor = Color.Tan;
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(85, 295);
+            textBox1.Location = new Point(42, 295);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(155, 20);
+            textBox1.Size = new Size(112, 20);
             textBox1.TabIndex = 73;
             textBox1.Text = "School  Name:";
             textBox1.TextAlign = HorizontalAlignment.Center;
@@ -212,7 +212,7 @@
             // RoomBtn
             // 
             RoomBtn.FlatStyle = FlatStyle.Popup;
-            RoomBtn.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            RoomBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             RoomBtn.Location = new Point(806, 58);
             RoomBtn.Name = "RoomBtn";
             RoomBtn.Size = new Size(102, 26);
@@ -224,7 +224,7 @@
             // SemesterBtn
             // 
             SemesterBtn.FlatStyle = FlatStyle.Popup;
-            SemesterBtn.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            SemesterBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             SemesterBtn.Location = new Point(620, 21);
             SemesterBtn.Name = "SemesterBtn";
             SemesterBtn.Size = new Size(144, 26);
@@ -236,7 +236,7 @@
             // ProfessorBtn
             // 
             ProfessorBtn.FlatStyle = FlatStyle.Popup;
-            ProfessorBtn.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            ProfessorBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ProfessorBtn.Location = new Point(620, 74);
             ProfessorBtn.Name = "ProfessorBtn";
             ProfessorBtn.Size = new Size(144, 26);
@@ -248,7 +248,7 @@
             // DepartmentBtn
             // 
             DepartmentBtn.FlatStyle = FlatStyle.Popup;
-            DepartmentBtn.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            DepartmentBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             DepartmentBtn.Location = new Point(430, 21);
             DepartmentBtn.Name = "DepartmentBtn";
             DepartmentBtn.Size = new Size(144, 26);
@@ -260,7 +260,7 @@
             // BuildingBtn
             // 
             BuildingBtn.FlatStyle = FlatStyle.Popup;
-            BuildingBtn.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            BuildingBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             BuildingBtn.Location = new Point(430, 74);
             BuildingBtn.Name = "BuildingBtn";
             BuildingBtn.Size = new Size(144, 26);
@@ -272,7 +272,7 @@
             // StudentBtn
             // 
             StudentBtn.FlatStyle = FlatStyle.Popup;
-            StudentBtn.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            StudentBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             StudentBtn.Location = new Point(259, 21);
             StudentBtn.Name = "StudentBtn";
             StudentBtn.Size = new Size(102, 26);
@@ -284,7 +284,7 @@
             // CourseBtn
             // 
             CourseBtn.FlatStyle = FlatStyle.Popup;
-            CourseBtn.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            CourseBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             CourseBtn.Location = new Point(259, 74);
             CourseBtn.Name = "CourseBtn";
             CourseBtn.Size = new Size(102, 26);
@@ -296,7 +296,7 @@
             // ClassBtn
             // 
             ClassBtn.FlatStyle = FlatStyle.Popup;
-            ClassBtn.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            ClassBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ClassBtn.Location = new Point(85, 21);
             ClassBtn.Name = "ClassBtn";
             ClassBtn.Size = new Size(102, 26);
@@ -308,7 +308,7 @@
             // SchoolBtn
             // 
             SchoolBtn.FlatStyle = FlatStyle.Popup;
-            SchoolBtn.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            SchoolBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             SchoolBtn.Location = new Point(85, 74);
             SchoolBtn.Name = "SchoolBtn";
             SchoolBtn.Size = new Size(102, 26);
