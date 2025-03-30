@@ -101,5 +101,10 @@ namespace tinycollege
         {
             this.Close();
         }
+
+        private void EnrollmentBtn_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

@@ -55,6 +55,7 @@
             CourseBtn = new Button();
             ClassBtn = new Button();
             SchoolBtn = new Button();
+            BtnEnrollment = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewBtn).BeginInit();
             SuspendLayout();
             // 
@@ -242,7 +243,7 @@
             // 
             BtnCross.FlatStyle = FlatStyle.Popup;
             BtnCross.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BtnCross.Location = new Point(916, -1);
+            BtnCross.Location = new Point(916, 0);
             BtnCross.Name = "BtnCross";
             BtnCross.Size = new Size(75, 23);
             BtnCross.TabIndex = 112;
@@ -254,9 +255,9 @@
             // 
             RoomBtn.FlatStyle = FlatStyle.Popup;
             RoomBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            RoomBtn.Location = new Point(805, 48);
+            RoomBtn.Location = new Point(804, 35);
             RoomBtn.Name = "RoomBtn";
-            RoomBtn.Size = new Size(102, 26);
+            RoomBtn.Size = new Size(131, 26);
             RoomBtn.TabIndex = 113;
             RoomBtn.Text = "ROOM";
             RoomBtn.UseVisualStyleBackColor = true;
@@ -266,7 +267,7 @@
             // 
             ProfessorBtn.FlatStyle = FlatStyle.Popup;
             ProfessorBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ProfessorBtn.Location = new Point(605, 22);
+            ProfessorBtn.Location = new Point(605, 35);
             ProfessorBtn.Name = "ProfessorBtn";
             ProfessorBtn.Size = new Size(144, 26);
             ProfessorBtn.TabIndex = 114;
@@ -278,7 +279,7 @@
             // 
             SemesterBtn.FlatStyle = FlatStyle.Popup;
             SemesterBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SemesterBtn.Location = new Point(605, 69);
+            SemesterBtn.Location = new Point(605, 82);
             SemesterBtn.Name = "SemesterBtn";
             SemesterBtn.Size = new Size(144, 26);
             SemesterBtn.TabIndex = 115;
@@ -290,7 +291,7 @@
             // 
             DepartmentBtn.FlatStyle = FlatStyle.Popup;
             DepartmentBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            DepartmentBtn.Location = new Point(400, 22);
+            DepartmentBtn.Location = new Point(400, 35);
             DepartmentBtn.Name = "DepartmentBtn";
             DepartmentBtn.Size = new Size(144, 26);
             DepartmentBtn.TabIndex = 116;
@@ -302,7 +303,7 @@
             // 
             BuildingBtn.FlatStyle = FlatStyle.Popup;
             BuildingBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BuildingBtn.Location = new Point(400, 69);
+            BuildingBtn.Location = new Point(400, 82);
             BuildingBtn.Name = "BuildingBtn";
             BuildingBtn.Size = new Size(144, 26);
             BuildingBtn.TabIndex = 117;
@@ -314,7 +315,7 @@
             // 
             StudentBtn.FlatStyle = FlatStyle.Popup;
             StudentBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            StudentBtn.Location = new Point(234, 22);
+            StudentBtn.Location = new Point(234, 35);
             StudentBtn.Name = "StudentBtn";
             StudentBtn.Size = new Size(108, 26);
             StudentBtn.TabIndex = 118;
@@ -326,7 +327,7 @@
             // 
             CourseBtn.FlatStyle = FlatStyle.Popup;
             CourseBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            CourseBtn.Location = new Point(234, 69);
+            CourseBtn.Location = new Point(234, 82);
             CourseBtn.Name = "CourseBtn";
             CourseBtn.Size = new Size(108, 26);
             CourseBtn.TabIndex = 119;
@@ -338,7 +339,7 @@
             // 
             ClassBtn.FlatStyle = FlatStyle.Popup;
             ClassBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ClassBtn.Location = new Point(72, 22);
+            ClassBtn.Location = new Point(72, 35);
             ClassBtn.Name = "ClassBtn";
             ClassBtn.Size = new Size(102, 26);
             ClassBtn.TabIndex = 120;
@@ -350,7 +351,7 @@
             // 
             SchoolBtn.FlatStyle = FlatStyle.Popup;
             SchoolBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SchoolBtn.Location = new Point(72, 69);
+            SchoolBtn.Location = new Point(72, 82);
             SchoolBtn.Name = "SchoolBtn";
             SchoolBtn.Size = new Size(102, 26);
             SchoolBtn.TabIndex = 121;
@@ -358,12 +359,24 @@
             SchoolBtn.UseVisualStyleBackColor = true;
             SchoolBtn.Click += SchoolBtn_Click;
             // 
+            // BtnEnrollment
+            // 
+            BtnEnrollment.FlatStyle = FlatStyle.Popup;
+            BtnEnrollment.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
+            BtnEnrollment.Location = new Point(804, 82);
+            BtnEnrollment.Name = "BtnEnrollment";
+            BtnEnrollment.Size = new Size(131, 26);
+            BtnEnrollment.TabIndex = 127;
+            BtnEnrollment.Text = "ENROLLMENT";
+            BtnEnrollment.UseVisualStyleBackColor = true;
+            // 
             // Semesters
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Tan;
             ClientSize = new Size(992, 571);
+            Controls.Add(BtnEnrollment);
             Controls.Add(SchoolBtn);
             Controls.Add(ClassBtn);
             Controls.Add(CourseBtn);
@@ -429,5 +442,6 @@
         private Button CourseBtn;
         private Button ClassBtn;
         private Button SchoolBtn;
+        private Button BtnEnrollment;
     }
 }
