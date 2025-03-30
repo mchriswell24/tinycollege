@@ -45,10 +45,8 @@
             dateTimePicker2Btn = new DateTimePicker();
             textBox7 = new TextBox();
             BtnEdit = new Button();
-            BtnCross = new Button();
             RoomBtn = new Button();
             ProfessorBtn = new Button();
-            SemesterBtn = new Button();
             DepartmentBtn = new Button();
             BuildingBtn = new Button();
             StudentBtn = new Button();
@@ -239,23 +237,11 @@
             BtnEdit.Text = "EDIT";
             BtnEdit.UseVisualStyleBackColor = true;
             // 
-            // BtnCross
-            // 
-            BtnCross.FlatStyle = FlatStyle.Popup;
-            BtnCross.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BtnCross.Location = new Point(916, 0);
-            BtnCross.Name = "BtnCross";
-            BtnCross.Size = new Size(75, 23);
-            BtnCross.TabIndex = 112;
-            BtnCross.Text = "X";
-            BtnCross.UseVisualStyleBackColor = true;
-            BtnCross.Click += BtnCross_Click;
-            // 
             // RoomBtn
             // 
             RoomBtn.FlatStyle = FlatStyle.Popup;
             RoomBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            RoomBtn.Location = new Point(804, 35);
+            RoomBtn.Location = new Point(771, 58);
             RoomBtn.Name = "RoomBtn";
             RoomBtn.Size = new Size(131, 26);
             RoomBtn.TabIndex = 113;
@@ -274,18 +260,6 @@
             ProfessorBtn.Text = "PROFESSOR";
             ProfessorBtn.UseVisualStyleBackColor = true;
             ProfessorBtn.Click += ProfessorBtn_Click;
-            // 
-            // SemesterBtn
-            // 
-            SemesterBtn.FlatStyle = FlatStyle.Popup;
-            SemesterBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SemesterBtn.Location = new Point(605, 82);
-            SemesterBtn.Name = "SemesterBtn";
-            SemesterBtn.Size = new Size(144, 26);
-            SemesterBtn.TabIndex = 115;
-            SemesterBtn.Text = "SEMESTER";
-            SemesterBtn.UseVisualStyleBackColor = true;
-            SemesterBtn.Click += SemesterBtn_Click;
             // 
             // DepartmentBtn
             // 
@@ -363,12 +337,13 @@
             // 
             BtnEnrollment.FlatStyle = FlatStyle.Popup;
             BtnEnrollment.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            BtnEnrollment.Location = new Point(804, 82);
+            BtnEnrollment.Location = new Point(605, 82);
             BtnEnrollment.Name = "BtnEnrollment";
-            BtnEnrollment.Size = new Size(131, 26);
+            BtnEnrollment.Size = new Size(144, 26);
             BtnEnrollment.TabIndex = 127;
             BtnEnrollment.Text = "ENROLLMENT";
             BtnEnrollment.UseVisualStyleBackColor = true;
+            BtnEnrollment.Click += BtnEnrollment_Click;
             // 
             // Semesters
             // 
@@ -383,10 +358,8 @@
             Controls.Add(StudentBtn);
             Controls.Add(BuildingBtn);
             Controls.Add(DepartmentBtn);
-            Controls.Add(SemesterBtn);
             Controls.Add(ProfessorBtn);
             Controls.Add(RoomBtn);
-            Controls.Add(BtnCross);
             Controls.Add(BtnEdit);
             Controls.Add(textBox7);
             Controls.Add(dateTimePicker2Btn);
@@ -432,10 +405,8 @@
         private DateTimePicker dateTimePicker2Btn;
         private TextBox textBox7;
         private Button BtnEdit;
-        private Button BtnCross;
         private Button RoomBtn;
         private Button ProfessorBtn;
-        private Button SemesterBtn;
         private Button DepartmentBtn;
         private Button BuildingBtn;
         private Button StudentBtn;

@@ -12,13 +12,9 @@ namespace tinycollege
 {
     public partial class CoursesInfo : Form
     {
-        private void CrossBtn_Click(object sender, EventArgs e)
+        public CoursesInfo()
         {
-            Profes profesForm = new Profes();
-            profesForm.Show();
-
-            // Close the current RoomsInfo form
-            this.Close();
+            InitializeComponent();
         }
 
         private void PNBtn_TextChanged(object sender, EventArgs e)
@@ -90,14 +86,6 @@ namespace tinycollege
         {
 
         }
-
-        private void CourseBtn_Click(object sender, EventArgs e)
-        {
-            CoursesInfo Form = new CoursesInfo();
-            Form.Show();
-            this.Hide();
-        }
-
         private void BuildingBtn_Click(object sender, EventArgs e)
         {
             Buildings Form = new Buildings();
@@ -152,6 +140,13 @@ namespace tinycollege
         {
             SchoolInfo Form = new SchoolInfo();
             Form.Show();
+            this.Hide();
+        }
+
+        private void BtnEnrollment_Click(object sender, EventArgs e)
+        {
+            Profes profesForm = new Profes();
+            profesForm.Show();
             this.Hide();
         }
     }

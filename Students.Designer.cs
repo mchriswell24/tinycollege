@@ -42,20 +42,19 @@
             EditBtn = new Button();
             CreateBtn = new Button();
             textBox1 = new TextBox();
-            dataGridViewBtn = new DataGridView();
             textBox6 = new TextBox();
             RoomBtn = new Button();
             SemesterBtn = new Button();
             ProfessorBtn = new Button();
             DepartmentBtn = new Button();
             BuildingBtn = new Button();
-            StudentBtn = new Button();
             ClassBtn = new Button();
             SchoolBtn = new Button();
             CourseBtn = new Button();
             textBox7 = new TextBox();
             BtnEnrollment = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewBtn).BeginInit();
+            dataGridView2 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
             // 
             // EnGBtn
@@ -214,17 +213,6 @@
             textBox1.Text = "First Name:";
             textBox1.TextAlign = HorizontalAlignment.Center;
             // 
-            // dataGridViewBtn
-            // 
-            dataGridViewBtn.BackgroundColor = Color.AntiqueWhite;
-            dataGridViewBtn.BorderStyle = BorderStyle.None;
-            dataGridViewBtn.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewBtn.Location = new Point(288, 187);
-            dataGridViewBtn.Name = "dataGridViewBtn";
-            dataGridViewBtn.Size = new Size(610, 304);
-            dataGridViewBtn.TabIndex = 18;
-            dataGridViewBtn.CellContentClick += dataGridViewBtn_CellContentClick;
-            // 
             // textBox6
             // 
             textBox6.BackColor = Color.Tan;
@@ -241,9 +229,9 @@
             // 
             RoomBtn.FlatStyle = FlatStyle.Popup;
             RoomBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            RoomBtn.Location = new Point(787, 34);
+            RoomBtn.Location = new Point(237, 34);
             RoomBtn.Name = "RoomBtn";
-            RoomBtn.Size = new Size(131, 26);
+            RoomBtn.Size = new Size(102, 26);
             RoomBtn.TabIndex = 100;
             RoomBtn.Text = "ROOM";
             RoomBtn.UseVisualStyleBackColor = true;
@@ -297,18 +285,6 @@
             BuildingBtn.UseVisualStyleBackColor = true;
             BuildingBtn.Click += BuildingBtn_Click;
             // 
-            // StudentBtn
-            // 
-            StudentBtn.FlatStyle = FlatStyle.Popup;
-            StudentBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            StudentBtn.Location = new Point(237, 34);
-            StudentBtn.Name = "StudentBtn";
-            StudentBtn.Size = new Size(102, 26);
-            StudentBtn.TabIndex = 105;
-            StudentBtn.Text = "STUDENT";
-            StudentBtn.UseVisualStyleBackColor = true;
-            StudentBtn.Click += StudentBtn_Click;
-            // 
             // ClassBtn
             // 
             ClassBtn.FlatStyle = FlatStyle.Popup;
@@ -358,12 +334,23 @@
             // 
             BtnEnrollment.FlatStyle = FlatStyle.Popup;
             BtnEnrollment.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            BtnEnrollment.Location = new Point(787, 83);
+            BtnEnrollment.Location = new Point(776, 55);
             BtnEnrollment.Name = "BtnEnrollment";
             BtnEnrollment.Size = new Size(131, 26);
             BtnEnrollment.TabIndex = 127;
             BtnEnrollment.Text = "ENROLLMENT";
             BtnEnrollment.UseVisualStyleBackColor = true;
+            BtnEnrollment.Click += BtnEnrollment_Click;
+            // 
+            // dataGridView2
+            // 
+            dataGridView2.BackgroundColor = Color.AntiqueWhite;
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Location = new Point(288, 196);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.Size = new Size(610, 308);
+            dataGridView2.TabIndex = 128;
+            dataGridView2.CellContentClick += dataGridView2_CellContentClick;
             // 
             // StudentsInfo
             // 
@@ -371,12 +358,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Tan;
             ClientSize = new Size(992, 571);
+            Controls.Add(dataGridView2);
             Controls.Add(BtnEnrollment);
             Controls.Add(textBox7);
             Controls.Add(CourseBtn);
             Controls.Add(SchoolBtn);
             Controls.Add(ClassBtn);
-            Controls.Add(StudentBtn);
             Controls.Add(BuildingBtn);
             Controls.Add(DepartmentBtn);
             Controls.Add(ProfessorBtn);
@@ -397,12 +384,11 @@
             Controls.Add(EditBtn);
             Controls.Add(CreateBtn);
             Controls.Add(textBox1);
-            Controls.Add(dataGridViewBtn);
             FormBorderStyle = FormBorderStyle.None;
             Name = "StudentsInfo";
             Text = "Students";
             Load += StudentsInfo_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridViewBtn).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -423,18 +409,17 @@
         private Button EditBtn;
         private Button CreateBtn;
         private TextBox textBox1;
-        private DataGridView dataGridViewBtn;
         private TextBox textBox6;
         private Button RoomBtn;
         private Button SemesterBtn;
         private Button ProfessorBtn;
         private Button DepartmentBtn;
         private Button BuildingBtn;
-        private Button StudentBtn;
         private Button ClassBtn;
         private Button SchoolBtn;
         private Button CourseBtn;
         private TextBox textBox7;
         private Button BtnEnrollment;
+        private DataGridView dataGridView2;
     }
 }

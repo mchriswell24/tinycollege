@@ -143,5 +143,12 @@ namespace tinycollege
             Form.Show();
             this.Hide();
         }
+
+        private void BtnEnrollment_Click(object sender, EventArgs e)
+        {
+            Profes profesForm = new Profes();
+            profesForm.Show();
+            this.Hide();
+        }
     }
 }

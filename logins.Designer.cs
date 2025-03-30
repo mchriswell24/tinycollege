@@ -85,11 +85,12 @@
             textBox3.BackColor = Color.Tan;
             textBox3.BorderStyle = BorderStyle.None;
             textBox3.Font = new Font("Segoe Script", 26.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(269, 67);
+            textBox3.Location = new Point(269, 174);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(305, 57);
+            textBox3.Size = new Size(299, 57);
             textBox3.TabIndex = 4;
             textBox3.Text = "TINY COLLEGE";
+            textBox3.TextChanged += textBox3_TextChanged;
             // 
             // LoginBtn
             // 

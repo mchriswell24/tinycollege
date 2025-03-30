@@ -38,15 +38,20 @@ namespace tinycollege
             if (username == "admin" && password == "password")
             {
                 // Open the Prof form if login is successful
-                Profes  profesForm = new Profes();
+                Profes profesForm = new Profes();
                 profesForm.Show();
 
-              
+
             }
             else
             {
                 MessageBox.Show("Invalid username or password", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

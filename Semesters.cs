@@ -12,11 +12,16 @@ namespace tinycollege
 {
     public partial class Semesters : Form
     {
+        public Semesters()
+        {
+            InitializeComponent();
+        }
+
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
 
         }
-        private void Semesters_Load(object sender, EventArgs e)
+        public void Semesters_Load(object sender, EventArgs e)
         {
 
         }
@@ -25,12 +30,6 @@ namespace tinycollege
         {
 
         }
-
-        private void CrossBtn_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void SemTermBtn_TextChanged(object sender, EventArgs e)
         {
 
@@ -50,19 +49,6 @@ namespace tinycollege
         {
 
         }
-
-        private void BtnCross_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void SemesterBtn_Click(object sender, EventArgs e)
-        {
-            Semesters Form = new Semesters();
-            Form.Show();
-            this.Hide();
-        }
-
         private void ClassBtn_Click(object sender, EventArgs e)
         {
             ClassesInfo Form = new ClassesInfo();
@@ -117,6 +103,13 @@ namespace tinycollege
         {
             RoomsInfo roomsInfoForm = new RoomsInfo();
             roomsInfoForm.Show();
+            this.Hide();
+        }
+
+        private void BtnEnrollment_Click(object sender, EventArgs e)
+        {
+            Profes profesForm = new Profes();
+            profesForm.Show();
             this.Hide();
         }
     }

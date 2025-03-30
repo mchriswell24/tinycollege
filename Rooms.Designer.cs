@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            CrossBtn = new Button();
             textBox6 = new TextBox();
             BuildingcodeBtn = new TextBox();
             RoomtypeBtn = new TextBox();
@@ -50,22 +49,9 @@
             BuildingBtn = new Button();
             SemesterBtn = new Button();
             ProfessorBtn = new Button();
-            RoomBtn = new Button();
             BtnEnrollment = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewBtn).BeginInit();
             SuspendLayout();
-            // 
-            // CrossBtn
-            // 
-            CrossBtn.FlatStyle = FlatStyle.Popup;
-            CrossBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            CrossBtn.Location = new Point(918, -1);
-            CrossBtn.Name = "CrossBtn";
-            CrossBtn.Size = new Size(75, 23);
-            CrossBtn.TabIndex = 7;
-            CrossBtn.Text = "X";
-            CrossBtn.UseVisualStyleBackColor = true;
-            CrossBtn.Click += CrossBtn_Click;
             // 
             // textBox6
             // 
@@ -305,23 +291,11 @@
             ProfessorBtn.UseVisualStyleBackColor = true;
             ProfessorBtn.Click += ProfessorBtn_Click;
             // 
-            // RoomBtn
-            // 
-            RoomBtn.FlatStyle = FlatStyle.Popup;
-            RoomBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            RoomBtn.Location = new Point(793, 42);
-            RoomBtn.Name = "RoomBtn";
-            RoomBtn.Size = new Size(131, 26);
-            RoomBtn.TabIndex = 114;
-            RoomBtn.Text = "ROOM";
-            RoomBtn.UseVisualStyleBackColor = true;
-            RoomBtn.Click += RoomBtn_Click;
-            // 
             // BtnEnrollment
             // 
             BtnEnrollment.FlatStyle = FlatStyle.Popup;
             BtnEnrollment.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            BtnEnrollment.Location = new Point(793, 90);
+            BtnEnrollment.Location = new Point(779, 65);
             BtnEnrollment.Name = "BtnEnrollment";
             BtnEnrollment.Size = new Size(131, 26);
             BtnEnrollment.TabIndex = 127;
@@ -336,7 +310,6 @@
             BackColor = Color.Tan;
             ClientSize = new Size(992, 571);
             Controls.Add(BtnEnrollment);
-            Controls.Add(RoomBtn);
             Controls.Add(ProfessorBtn);
             Controls.Add(SemesterBtn);
             Controls.Add(BuildingBtn);
@@ -346,7 +319,6 @@
             Controls.Add(SchoolBtn);
             Controls.Add(ClassBtn);
             Controls.Add(textBox4);
-            Controls.Add(CrossBtn);
             Controls.Add(textBox3);
             Controls.Add(textBox6);
             Controls.Add(BuildingcodeBtn);
@@ -369,8 +341,6 @@
         }
 
         #endregion
-
-        private Button CrossBtn;
         private TextBox textBox6;
         private TextBox BuildingcodeBtn;
         private TextBox RoomtypeBtn;
@@ -392,7 +362,6 @@
         private Button BuildingBtn;
         private Button SemesterBtn;
         private Button ProfessorBtn;
-        private Button RoomBtn;
         private Button BtnEnrollment;
     }
 }

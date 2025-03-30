@@ -47,7 +47,6 @@
             textBox1 = new TextBox();
             dataGridViewBtn = new DataGridView();
             textBox8 = new TextBox();
-            CrossBtn = new Button();
             RoomBtn = new Button();
             SemesterBtn = new Button();
             ProfessorBtn = new Button();
@@ -55,7 +54,6 @@
             BuildingBtn = new Button();
             StudentBtn = new Button();
             CourseBtn = new Button();
-            ClassBtn = new Button();
             SchoolBtn = new Button();
             BtnEnrollment = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewBtn).BeginInit();
@@ -264,23 +262,11 @@
             textBox8.Size = new Size(523, 16);
             textBox8.TabIndex = 73;
             // 
-            // CrossBtn
-            // 
-            CrossBtn.FlatStyle = FlatStyle.Popup;
-            CrossBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            CrossBtn.Location = new Point(916, 1);
-            CrossBtn.Name = "CrossBtn";
-            CrossBtn.Size = new Size(75, 23);
-            CrossBtn.TabIndex = 74;
-            CrossBtn.Text = "X";
-            CrossBtn.UseVisualStyleBackColor = true;
-            CrossBtn.Click += CrossBtn_Click_1;
-            // 
             // RoomBtn
             // 
             RoomBtn.FlatStyle = FlatStyle.Popup;
             RoomBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            RoomBtn.Location = new Point(794, 34);
+            RoomBtn.Location = new Point(773, 58);
             RoomBtn.Name = "RoomBtn";
             RoomBtn.Size = new Size(131, 26);
             RoomBtn.TabIndex = 114;
@@ -360,18 +346,6 @@
             CourseBtn.UseVisualStyleBackColor = true;
             CourseBtn.Click += CourseBtn_Click;
             // 
-            // ClassBtn
-            // 
-            ClassBtn.FlatStyle = FlatStyle.Popup;
-            ClassBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ClassBtn.Location = new Point(84, 34);
-            ClassBtn.Name = "ClassBtn";
-            ClassBtn.Size = new Size(102, 26);
-            ClassBtn.TabIndex = 122;
-            ClassBtn.Text = "CLASS";
-            ClassBtn.UseVisualStyleBackColor = true;
-            ClassBtn.Click += ClassBtn_Click;
-            // 
             // SchoolBtn
             // 
             SchoolBtn.FlatStyle = FlatStyle.Popup;
@@ -388,12 +362,13 @@
             // 
             BtnEnrollment.FlatStyle = FlatStyle.Popup;
             BtnEnrollment.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            BtnEnrollment.Location = new Point(794, 79);
+            BtnEnrollment.Location = new Point(75, 34);
             BtnEnrollment.Name = "BtnEnrollment";
             BtnEnrollment.Size = new Size(131, 26);
             BtnEnrollment.TabIndex = 127;
             BtnEnrollment.Text = "ENROLLMENT";
             BtnEnrollment.UseVisualStyleBackColor = true;
+            BtnEnrollment.Click += BtnEnrollment_Click;
             // 
             // ClassesInfo
             // 
@@ -403,7 +378,6 @@
             ClientSize = new Size(992, 571);
             Controls.Add(BtnEnrollment);
             Controls.Add(SchoolBtn);
-            Controls.Add(ClassBtn);
             Controls.Add(CourseBtn);
             Controls.Add(StudentBtn);
             Controls.Add(BuildingBtn);
@@ -411,7 +385,6 @@
             Controls.Add(ProfessorBtn);
             Controls.Add(SemesterBtn);
             Controls.Add(RoomBtn);
-            Controls.Add(CrossBtn);
             Controls.Add(textBox8);
             Controls.Add(SemcodeBtn);
             Controls.Add(textBox7);
@@ -461,7 +434,6 @@
         private TextBox textBox1;
         private DataGridView dataGridViewBtn;
         private TextBox textBox8;
-        private Button CrossBtn;
         private Button RoomBtn;
         private Button SemesterBtn;
         private Button ProfessorBtn;
@@ -469,7 +441,6 @@
         private Button BuildingBtn;
         private Button StudentBtn;
         private Button CourseBtn;
-        private Button ClassBtn;
         private Button SchoolBtn;
         private Button BtnEnrollment;
     }

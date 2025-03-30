@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            CrossBtn = new Button();
             textBox6 = new TextBox();
             buildinglocBtn = new TextBox();
             BuildingnameBtn = new TextBox();
@@ -46,7 +45,6 @@
             SemesterBtn = new Button();
             ProfessorBtn = new Button();
             DepartmentBtn = new Button();
-            BuildingBtn = new Button();
             StudentBtn = new Button();
             CourseBtn = new Button();
             SchoolBtn = new Button();
@@ -54,18 +52,6 @@
             BtnEnrollment = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewBtn).BeginInit();
             SuspendLayout();
-            // 
-            // CrossBtn
-            // 
-            CrossBtn.FlatStyle = FlatStyle.Popup;
-            CrossBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            CrossBtn.Location = new Point(917, 0);
-            CrossBtn.Name = "CrossBtn";
-            CrossBtn.Size = new Size(75, 23);
-            CrossBtn.TabIndex = 7;
-            CrossBtn.Text = "X";
-            CrossBtn.UseVisualStyleBackColor = true;
-            CrossBtn.Click += CrossBtn_Click;
             // 
             // textBox6
             // 
@@ -82,7 +68,7 @@
             // buildinglocBtn
             // 
             buildinglocBtn.BorderStyle = BorderStyle.None;
-            buildinglocBtn.Location = new Point(69, 324);
+            buildinglocBtn.Location = new Point(69, 378);
             buildinglocBtn.Name = "buildinglocBtn";
             buildinglocBtn.Size = new Size(253, 16);
             buildinglocBtn.TabIndex = 64;
@@ -90,7 +76,7 @@
             // BuildingnameBtn
             // 
             BuildingnameBtn.BorderStyle = BorderStyle.None;
-            BuildingnameBtn.Location = new Point(69, 276);
+            BuildingnameBtn.Location = new Point(69, 330);
             BuildingnameBtn.Name = "BuildingnameBtn";
             BuildingnameBtn.Size = new Size(253, 16);
             BuildingnameBtn.TabIndex = 63;
@@ -98,7 +84,7 @@
             // BuildingcodeBtn
             // 
             BuildingcodeBtn.BorderStyle = BorderStyle.None;
-            BuildingcodeBtn.Location = new Point(69, 228);
+            BuildingcodeBtn.Location = new Point(69, 282);
             BuildingcodeBtn.Name = "BuildingcodeBtn";
             BuildingcodeBtn.Size = new Size(253, 16);
             BuildingcodeBtn.TabIndex = 62;
@@ -108,7 +94,7 @@
             textBox3.BackColor = Color.Tan;
             textBox3.BorderStyle = BorderStyle.None;
             textBox3.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(47, 202);
+            textBox3.Location = new Point(47, 256);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(155, 20);
             textBox3.TabIndex = 60;
@@ -120,7 +106,7 @@
             textBox2.BackColor = Color.Tan;
             textBox2.BorderStyle = BorderStyle.None;
             textBox2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(57, 298);
+            textBox2.Location = new Point(57, 352);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(145, 20);
             textBox2.TabIndex = 59;
@@ -180,7 +166,7 @@
             textBox1.BackColor = Color.Tan;
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(47, 250);
+            textBox1.Location = new Point(47, 304);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(155, 20);
             textBox1.TabIndex = 58;
@@ -197,6 +183,7 @@
             dataGridViewBtn.Name = "dataGridViewBtn";
             dataGridViewBtn.Size = new Size(533, 295);
             dataGridViewBtn.TabIndex = 52;
+            dataGridViewBtn.CellContentClick += dataGridViewBtn_CellContentClick;
             // 
             // textBox4
             // 
@@ -211,7 +198,7 @@
             // 
             RoomBtn.FlatStyle = FlatStyle.Popup;
             RoomBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            RoomBtn.Location = new Point(754, 32);
+            RoomBtn.Location = new Point(754, 51);
             RoomBtn.Name = "RoomBtn";
             RoomBtn.Size = new Size(131, 26);
             RoomBtn.TabIndex = 101;
@@ -254,18 +241,6 @@
             DepartmentBtn.Text = "DEPARTMENT";
             DepartmentBtn.UseVisualStyleBackColor = true;
             DepartmentBtn.Click += DepartmentBtn_Click;
-            // 
-            // BuildingBtn
-            // 
-            BuildingBtn.FlatStyle = FlatStyle.Popup;
-            BuildingBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            BuildingBtn.Location = new Point(370, 75);
-            BuildingBtn.Name = "BuildingBtn";
-            BuildingBtn.Size = new Size(144, 26);
-            BuildingBtn.TabIndex = 105;
-            BuildingBtn.Text = "BUILDING";
-            BuildingBtn.UseVisualStyleBackColor = true;
-            BuildingBtn.Click += BuildingBtn_Click;
             // 
             // StudentBtn
             // 
@@ -319,9 +294,9 @@
             // 
             BtnEnrollment.FlatStyle = FlatStyle.Popup;
             BtnEnrollment.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            BtnEnrollment.Location = new Point(754, 75);
+            BtnEnrollment.Location = new Point(370, 75);
             BtnEnrollment.Name = "BtnEnrollment";
-            BtnEnrollment.Size = new Size(131, 26);
+            BtnEnrollment.Size = new Size(144, 26);
             BtnEnrollment.TabIndex = 126;
             BtnEnrollment.Text = "ENROLLMENT";
             BtnEnrollment.UseVisualStyleBackColor = true;
@@ -338,13 +313,11 @@
             Controls.Add(SchoolBtn);
             Controls.Add(CourseBtn);
             Controls.Add(StudentBtn);
-            Controls.Add(BuildingBtn);
             Controls.Add(DepartmentBtn);
             Controls.Add(ProfessorBtn);
             Controls.Add(SemesterBtn);
             Controls.Add(RoomBtn);
             Controls.Add(textBox4);
-            Controls.Add(CrossBtn);
             Controls.Add(textBox6);
             Controls.Add(buildinglocBtn);
             Controls.Add(BuildingnameBtn);
@@ -367,8 +340,6 @@
         }
 
         #endregion
-
-        private Button CrossBtn;
         private TextBox textBox6;
         private TextBox buildinglocBtn;
         private TextBox BuildingnameBtn;
@@ -386,7 +357,6 @@
         private Button SemesterBtn;
         private Button ProfessorBtn;
         private Button DepartmentBtn;
-        private Button BuildingBtn;
         private Button StudentBtn;
         private Button CourseBtn;
         private Button SchoolBtn;

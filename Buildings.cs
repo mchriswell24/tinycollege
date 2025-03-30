@@ -29,7 +29,7 @@ namespace tinycollege
 
         public void Buildings_Load(object sender, EventArgs e)
         {
-
+             
         }
 
         private void CreateBtn_Click(object sender, EventArgs e)
@@ -46,12 +46,6 @@ namespace tinycollege
         {
 
         }
-
-        private void CrossBtn_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void RoomBtn_Click(object sender, EventArgs e)
         {
             RoomsInfo roomsInfoForm = new RoomsInfo();
@@ -79,14 +73,6 @@ namespace tinycollege
             Form.Show();
             this.Hide();
         }
-
-        private void BuildingBtn_Click(object sender, EventArgs e)
-        {
-            Buildings Form = new Buildings();
-            Form.Show();
-            this.Hide();
-        }
-
         private void StudentBtn_Click(object sender, EventArgs e)
         {
             StudentsInfo Form = new StudentsInfo();
@@ -116,6 +102,13 @@ namespace tinycollege
         }
 
         private void BtnEnrollment_Click(object sender, EventArgs e)
+        {
+            Profes profesForm = new Profes();
+            profesForm.Show();
+            this.Hide();
+        }
+
+        private void dataGridViewBtn_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

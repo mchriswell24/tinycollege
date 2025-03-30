@@ -107,18 +107,17 @@ namespace tinycollege
             Form.Show();
             this.Hide();
         }
-
-        private void ClassBtn_Click(object sender, EventArgs e)
-        {
-            ClassesInfo Form = new ClassesInfo();
-            Form.Show();
-            this.Hide();
-        }
-
         private void SchoolBtn_Click(object sender, EventArgs e)
         {
             SchoolInfo Form = new SchoolInfo();
             Form.Show();
+            this.Hide();
+        }
+
+        private void BtnEnrollment_Click(object sender, EventArgs e)
+        {
+            Profes profesForm = new Profes();
+            profesForm.Show();
             this.Hide();
         }
     }

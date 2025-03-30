@@ -50,7 +50,6 @@
             StudentBtn = new Button();
             CourseBtn = new Button();
             ClassBtn = new Button();
-            SchoolBtn = new Button();
             BtnEnrollment = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewBtn).BeginInit();
             SuspendLayout();
@@ -306,28 +305,17 @@
             ClassBtn.UseVisualStyleBackColor = true;
             ClassBtn.Click += ClassBtn_Click;
             // 
-            // SchoolBtn
-            // 
-            SchoolBtn.FlatStyle = FlatStyle.Popup;
-            SchoolBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SchoolBtn.Location = new Point(85, 87);
-            SchoolBtn.Name = "SchoolBtn";
-            SchoolBtn.Size = new Size(102, 26);
-            SchoolBtn.TabIndex = 123;
-            SchoolBtn.Text = "SCHOOL";
-            SchoolBtn.UseVisualStyleBackColor = true;
-            SchoolBtn.Click += SchoolBtn_Click;
-            // 
             // BtnEnrollment
             // 
             BtnEnrollment.FlatStyle = FlatStyle.Popup;
             BtnEnrollment.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            BtnEnrollment.Location = new Point(802, 87);
+            BtnEnrollment.Location = new Point(76, 87);
             BtnEnrollment.Name = "BtnEnrollment";
-            BtnEnrollment.Size = new Size(131, 26);
+            BtnEnrollment.Size = new Size(122, 26);
             BtnEnrollment.TabIndex = 127;
             BtnEnrollment.Text = "ENROLLMENT";
             BtnEnrollment.UseVisualStyleBackColor = true;
+            BtnEnrollment.Click += BtnEnrollment_Click;
             // 
             // SchoolInfo
             // 
@@ -336,7 +324,6 @@
             BackColor = Color.Tan;
             ClientSize = new Size(992, 571);
             Controls.Add(BtnEnrollment);
-            Controls.Add(SchoolBtn);
             Controls.Add(ClassBtn);
             Controls.Add(CourseBtn);
             Controls.Add(StudentBtn);
@@ -391,7 +378,6 @@
         private Button StudentBtn;
         private Button CourseBtn;
         private Button ClassBtn;
-        private Button SchoolBtn;
         private Button BtnEnrollment;
     }
 }

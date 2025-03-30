@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            dataGridViewBtn = new DataGridView();
             CrossBtn = new Button();
             CreateBtn = new Button();
             EditBtn = new Button();
@@ -58,21 +57,10 @@
             dateTimePicker1 = new DateTimePicker();
             textBox7 = new TextBox();
             xBtn = new Button();
-            EnrollmentBtn = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewBtn).BeginInit();
+            dataGridView1 = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
-            // 
-            // dataGridViewBtn
-            // 
-            dataGridViewBtn.BackgroundColor = Color.AntiqueWhite;
-            dataGridViewBtn.BorderStyle = BorderStyle.None;
-            dataGridViewBtn.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewBtn.Location = new Point(369, 221);
-            dataGridViewBtn.Name = "dataGridViewBtn";
-            dataGridViewBtn.Size = new Size(527, 296);
-            dataGridViewBtn.TabIndex = 0;
-            dataGridViewBtn.CellContentClick += dataGridViewBtn_CellContentClick;
             // 
             // CrossBtn
             // 
@@ -320,7 +308,7 @@
             // 
             RoomBtn.FlatStyle = FlatStyle.Popup;
             RoomBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            RoomBtn.Location = new Point(781, 59);
+            RoomBtn.Location = new Point(775, 83);
             RoomBtn.Name = "RoomBtn";
             RoomBtn.Size = new Size(137, 26);
             RoomBtn.TabIndex = 26;
@@ -368,17 +356,15 @@
             xBtn.UseVisualStyleBackColor = true;
             xBtn.Click += xBtn_Click;
             // 
-            // EnrollmentBtn
+            // dataGridView1
             // 
-            EnrollmentBtn.FlatStyle = FlatStyle.Popup;
-            EnrollmentBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            EnrollmentBtn.Location = new Point(781, 103);
-            EnrollmentBtn.Name = "EnrollmentBtn";
-            EnrollmentBtn.Size = new Size(137, 26);
-            EnrollmentBtn.TabIndex = 103;
-            EnrollmentBtn.Text = "ENROLLMENT";
-            EnrollmentBtn.UseVisualStyleBackColor = true;
-            EnrollmentBtn.Click += EnrollmentBtn_Click;
+            dataGridView1.BackgroundColor = Color.AntiqueWhite;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(369, 245);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(527, 237);
+            dataGridView1.TabIndex = 104;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // Profes
             // 
@@ -386,7 +372,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Tan;
             ClientSize = new Size(992, 571);
-            Controls.Add(EnrollmentBtn);
+            Controls.Add(dataGridView1);
             Controls.Add(xBtn);
             Controls.Add(textBox7);
             Controls.Add(dateTimePicker1);
@@ -414,20 +400,17 @@
             Controls.Add(UpdateBtn);
             Controls.Add(EditBtn);
             Controls.Add(CreateBtn);
-            Controls.Add(dataGridViewBtn);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Profes";
             Text = "Prof";
             Load += Prof_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridViewBtn).EndInit();
             ((System.ComponentModel.ISupportInitialize)bindingSource1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private DataGridView dataGridViewBtn;
         private Button CrossBtn;
         private Button CreateBtn;
         private Button EditBtn;
@@ -456,6 +439,6 @@
         private DateTimePicker dateTimePicker1;
         private TextBox textBox7;
         private Button xBtn;
-        private Button EnrollmentBtn;
+        private DataGridView dataGridView1;
     }
 }

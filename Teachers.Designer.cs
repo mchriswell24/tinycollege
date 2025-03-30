@@ -54,7 +54,6 @@
             DepartmentBtn = new Button();
             BuildingBtn = new Button();
             SemesterBtn = new Button();
-            ProfessorBtn = new Button();
             RoomBtn = new Button();
             textBox8 = new TextBox();
             BtnEnrollment = new Button();
@@ -355,23 +354,11 @@
             SemesterBtn.UseVisualStyleBackColor = true;
             SemesterBtn.Click += SemesterBtn_Click;
             // 
-            // ProfessorBtn
-            // 
-            ProfessorBtn.FlatStyle = FlatStyle.Popup;
-            ProfessorBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            ProfessorBtn.Location = new Point(603, 84);
-            ProfessorBtn.Name = "ProfessorBtn";
-            ProfessorBtn.Size = new Size(144, 26);
-            ProfessorBtn.TabIndex = 114;
-            ProfessorBtn.Text = "PROFESSOR";
-            ProfessorBtn.UseVisualStyleBackColor = true;
-            ProfessorBtn.Click += ProfessorBtn_Click;
-            // 
             // RoomBtn
             // 
             RoomBtn.FlatStyle = FlatStyle.Popup;
             RoomBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            RoomBtn.Location = new Point(799, 40);
+            RoomBtn.Location = new Point(775, 60);
             RoomBtn.Name = "RoomBtn";
             RoomBtn.Size = new Size(131, 26);
             RoomBtn.TabIndex = 115;
@@ -392,12 +379,13 @@
             // 
             BtnEnrollment.FlatStyle = FlatStyle.Popup;
             BtnEnrollment.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            BtnEnrollment.Location = new Point(799, 84);
+            BtnEnrollment.Location = new Point(603, 84);
             BtnEnrollment.Name = "BtnEnrollment";
-            BtnEnrollment.Size = new Size(131, 26);
+            BtnEnrollment.Size = new Size(142, 26);
             BtnEnrollment.TabIndex = 127;
             BtnEnrollment.Text = "ENROLLMENT";
             BtnEnrollment.UseVisualStyleBackColor = true;
+            BtnEnrollment.Click += BtnEnrollment_Click;
             // 
             // TeachersInfo
             // 
@@ -408,7 +396,6 @@
             Controls.Add(BtnEnrollment);
             Controls.Add(textBox8);
             Controls.Add(RoomBtn);
-            Controls.Add(ProfessorBtn);
             Controls.Add(SemesterBtn);
             Controls.Add(BuildingBtn);
             Controls.Add(DepartmentBtn);
@@ -472,7 +459,6 @@
         private Button DepartmentBtn;
         private Button BuildingBtn;
         private Button SemesterBtn;
-        private Button ProfessorBtn;
         private Button RoomBtn;
         private TextBox textBox8;
         private Button BtnEnrollment;

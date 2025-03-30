@@ -43,13 +43,11 @@
             EditBtn = new Button();
             CreateBtn = new Button();
             textBox1 = new TextBox();
-            CrossBtn = new Button();
             dataGridViewBtn = new DataGridView();
             ClasscodeBtn = new TextBox();
             ClassBtn = new Button();
             SchoolBtn = new Button();
             StudentBtn = new Button();
-            CourseBtn = new Button();
             DepartmentBtn = new Button();
             BuildingBtn = new Button();
             SemesterBtn = new Button();
@@ -228,19 +226,6 @@
             textBox1.Text = "Depatment Code:";
             textBox1.TextAlign = HorizontalAlignment.Center;
             // 
-            // CrossBtn
-            // 
-            CrossBtn.BackgroundImageLayout = ImageLayout.None;
-            CrossBtn.FlatStyle = FlatStyle.Popup;
-            CrossBtn.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            CrossBtn.Location = new Point(920, 0);
-            CrossBtn.Name = "CrossBtn";
-            CrossBtn.Size = new Size(75, 27);
-            CrossBtn.TabIndex = 7;
-            CrossBtn.Text = "X";
-            CrossBtn.UseVisualStyleBackColor = true;
-            CrossBtn.Click += CrossBtn_Click;
-            // 
             // dataGridViewBtn
             // 
             dataGridViewBtn.BackgroundColor = Color.AntiqueWhite;
@@ -289,25 +274,13 @@
             // 
             StudentBtn.FlatStyle = FlatStyle.Popup;
             StudentBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            StudentBtn.Location = new Point(235, 53);
+            StudentBtn.Location = new Point(224, 101);
             StudentBtn.Name = "StudentBtn";
             StudentBtn.Size = new Size(102, 26);
             StudentBtn.TabIndex = 93;
             StudentBtn.Text = "STUDENT";
             StudentBtn.UseVisualStyleBackColor = true;
             StudentBtn.Click += StudentBtn_Click;
-            // 
-            // CourseBtn
-            // 
-            CourseBtn.FlatStyle = FlatStyle.Popup;
-            CourseBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            CourseBtn.Location = new Point(235, 101);
-            CourseBtn.Name = "CourseBtn";
-            CourseBtn.Size = new Size(102, 26);
-            CourseBtn.TabIndex = 94;
-            CourseBtn.Text = "COURSE";
-            CourseBtn.UseVisualStyleBackColor = true;
-            CourseBtn.Click += CourseBtn_Click;
             // 
             // DepartmentBtn
             // 
@@ -361,7 +334,7 @@
             // 
             RoomBtn.FlatStyle = FlatStyle.Popup;
             RoomBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            RoomBtn.Location = new Point(795, 53);
+            RoomBtn.Location = new Point(783, 81);
             RoomBtn.Name = "RoomBtn";
             RoomBtn.Size = new Size(132, 26);
             RoomBtn.TabIndex = 99;
@@ -373,12 +346,13 @@
             // 
             BtnEnrollment.FlatStyle = FlatStyle.Popup;
             BtnEnrollment.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            BtnEnrollment.Location = new Point(796, 101);
+            BtnEnrollment.Location = new Point(211, 53);
             BtnEnrollment.Name = "BtnEnrollment";
             BtnEnrollment.Size = new Size(131, 26);
             BtnEnrollment.TabIndex = 127;
-            BtnEnrollment.Text = "ENROLLMENT";
+            BtnEnrollment.Text = " Enrollment";
             BtnEnrollment.UseVisualStyleBackColor = true;
+            BtnEnrollment.Click += BtnEnrollment_Click;
             // 
             // CoursesInfo
             // 
@@ -392,12 +366,10 @@
             Controls.Add(SemesterBtn);
             Controls.Add(BuildingBtn);
             Controls.Add(DepartmentBtn);
-            Controls.Add(CourseBtn);
             Controls.Add(StudentBtn);
             Controls.Add(SchoolBtn);
             Controls.Add(ClassBtn);
             Controls.Add(ClasscodeBtn);
-            Controls.Add(CrossBtn);
             Controls.Add(textBox6);
             Controls.Add(CreditsBtn);
             Controls.Add(CoursedescBtn);
@@ -439,13 +411,11 @@
         private Button EditBtn;
         private Button CreateBtn;
         private TextBox textBox1;
-        private Button CrossBtn;
         private DataGridView dataGridViewBtn;
         private TextBox ClasscodeBtn;
         private Button ClassBtn;
         private Button SchoolBtn;
         private Button StudentBtn;
-        private Button CourseBtn;
         private Button DepartmentBtn;
         private Button BuildingBtn;
         private Button SemesterBtn;

@@ -47,7 +47,6 @@
             RoomBtn = new Button();
             ProfessorBtn = new Button();
             SemesterBtn = new Button();
-            DepartmentBtn = new Button();
             BuildingBtn = new Button();
             CourseBtn = new Button();
             StudentBtn = new Button();
@@ -234,9 +233,9 @@
             // 
             RoomBtn.FlatStyle = FlatStyle.Popup;
             RoomBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            RoomBtn.Location = new Point(799, 42);
+            RoomBtn.Location = new Point(414, 42);
             RoomBtn.Name = "RoomBtn";
-            RoomBtn.Size = new Size(131, 26);
+            RoomBtn.Size = new Size(144, 26);
             RoomBtn.TabIndex = 53;
             RoomBtn.Text = "ROOM";
             RoomBtn.UseVisualStyleBackColor = true;
@@ -265,18 +264,6 @@
             SemesterBtn.Text = "SEMESTER";
             SemesterBtn.UseVisualStyleBackColor = true;
             SemesterBtn.Click += SemesterBtn_Click;
-            // 
-            // DepartmentBtn
-            // 
-            DepartmentBtn.FlatStyle = FlatStyle.Popup;
-            DepartmentBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            DepartmentBtn.Location = new Point(414, 42);
-            DepartmentBtn.Name = "DepartmentBtn";
-            DepartmentBtn.Size = new Size(144, 26);
-            DepartmentBtn.TabIndex = 101;
-            DepartmentBtn.Text = "DEPARTMENT";
-            DepartmentBtn.UseVisualStyleBackColor = true;
-            DepartmentBtn.Click += DepartmentBtn_Click;
             // 
             // BuildingBtn
             // 
@@ -342,7 +329,7 @@
             // 
             BtnEnrollment.FlatStyle = FlatStyle.Popup;
             BtnEnrollment.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
-            BtnEnrollment.Location = new Point(799, 89);
+            BtnEnrollment.Location = new Point(778, 69);
             BtnEnrollment.Name = "BtnEnrollment";
             BtnEnrollment.Size = new Size(131, 26);
             BtnEnrollment.TabIndex = 127;
@@ -362,7 +349,6 @@
             Controls.Add(StudentBtn);
             Controls.Add(CourseBtn);
             Controls.Add(BuildingBtn);
-            Controls.Add(DepartmentBtn);
             Controls.Add(SemesterBtn);
             Controls.Add(ProfessorBtn);
             Controls.Add(RoomBtn);
@@ -412,7 +398,6 @@
         private Button RoomBtn;
         private Button ProfessorBtn;
         private Button SemesterBtn;
-        private Button DepartmentBtn;
         private Button BuildingBtn;
         private Button CourseBtn;
         private Button StudentBtn;
