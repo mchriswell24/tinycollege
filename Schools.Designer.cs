@@ -39,7 +39,6 @@
             BtnEdit = new Button();
             BtnCreate = new Button();
             textBox1 = new TextBox();
-            dataGridViewBtn = new DataGridView();
             CrossBtn = new Button();
             textBox4 = new TextBox();
             RoomBtn = new Button();
@@ -51,7 +50,8 @@
             CourseBtn = new Button();
             ClassBtn = new Button();
             BtnEnrollment = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewBtn).BeginInit();
+            dataGridView4 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView4).BeginInit();
             SuspendLayout();
             // 
             // textBox6
@@ -176,17 +176,6 @@
             textBox1.TabIndex = 73;
             textBox1.Text = "School  Name:";
             textBox1.TextAlign = HorizontalAlignment.Center;
-            // 
-            // dataGridViewBtn
-            // 
-            dataGridViewBtn.BackgroundColor = Color.AntiqueWhite;
-            dataGridViewBtn.BorderStyle = BorderStyle.None;
-            dataGridViewBtn.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewBtn.Location = new Point(338, 195);
-            dataGridViewBtn.Name = "dataGridViewBtn";
-            dataGridViewBtn.Size = new Size(548, 290);
-            dataGridViewBtn.TabIndex = 67;
-            dataGridViewBtn.CellContentClick += dataGridViewBtn_CellContentClick;
             // 
             // CrossBtn
             // 
@@ -317,12 +306,22 @@
             BtnEnrollment.UseVisualStyleBackColor = true;
             BtnEnrollment.Click += BtnEnrollment_Click;
             // 
+            // dataGridView4
+            // 
+            dataGridView4.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView4.Location = new Point(338, 208);
+            dataGridView4.Name = "dataGridView4";
+            dataGridView4.Size = new Size(548, 281);
+            dataGridView4.TabIndex = 128;
+            dataGridView4.CellContentClick += dataGridView4_CellContentClick;
+            // 
             // SchoolInfo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Tan;
             ClientSize = new Size(992, 571);
+            Controls.Add(dataGridView4);
             Controls.Add(BtnEnrollment);
             Controls.Add(ClassBtn);
             Controls.Add(CourseBtn);
@@ -345,12 +344,11 @@
             Controls.Add(BtnEdit);
             Controls.Add(BtnCreate);
             Controls.Add(textBox1);
-            Controls.Add(dataGridViewBtn);
             FormBorderStyle = FormBorderStyle.None;
             Name = "SchoolInfo";
             Text = "Schools";
             Load += Schools_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridViewBtn).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -367,7 +365,6 @@
         private Button BtnEdit;
         private Button BtnCreate;
         private TextBox textBox1;
-        private DataGridView dataGridViewBtn;
         private Button CrossBtn;
         private TextBox textBox4;
         private Button RoomBtn;
@@ -379,5 +376,6 @@
         private Button CourseBtn;
         private Button ClassBtn;
         private Button BtnEnrollment;
+        private DataGridView dataGridView4;
     }
 }

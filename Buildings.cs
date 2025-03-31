@@ -29,7 +29,7 @@ namespace tinycollege
 
         public void Buildings_Load(object sender, EventArgs e)
         {
-             
+
         }
 
         private void CreateBtn_Click(object sender, EventArgs e)
@@ -109,6 +109,11 @@ namespace tinycollege
         }
 
         private void dataGridViewBtn_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView5_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
