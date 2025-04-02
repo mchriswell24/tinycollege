@@ -293,6 +293,7 @@
             // 
             // dataGridView5
             // 
+            dataGridView5.BackgroundColor = Color.AntiqueWhite;
             dataGridView5.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView5.Location = new Point(352, 205);
             dataGridView5.Name = "dataGridView5";

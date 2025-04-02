@@ -12,6 +12,8 @@ namespace tinycollege
 {
     public partial class Semesters : Form
     {
+        MySQLConnector mmm = new MySQLConnector();
+
         public Semesters()
         {
             InitializeComponent();
@@ -23,6 +25,7 @@ namespace tinycollege
         }
         public void Semesters_Load(object sender, EventArgs e)
         {
+            dataGridView0.DataSource = mmm.Fetchsemester();
 
         }
 
@@ -111,6 +114,11 @@ namespace tinycollege
             Profes profesForm = new Profes();
             profesForm.Show();
             this.Hide();
+        }
+
+        private void dataGridView0_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

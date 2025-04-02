@@ -39,7 +39,6 @@
             UpdateBtn = new Button();
             BtnCreate = new Button();
             textBox1 = new TextBox();
-            dataGridViewBtn = new DataGridView();
             dateTimePicker1Btn = new DateTimePicker();
             textBox4 = new TextBox();
             dateTimePicker2Btn = new DateTimePicker();
@@ -54,7 +53,8 @@
             ClassBtn = new Button();
             SchoolBtn = new Button();
             BtnEnrollment = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewBtn).BeginInit();
+            dataGridView0 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView0).BeginInit();
             SuspendLayout();
             // 
             // textBox6
@@ -177,17 +177,6 @@
             textBox1.TabIndex = 96;
             textBox1.Text = "Semester Year:";
             textBox1.TextAlign = HorizontalAlignment.Center;
-            // 
-            // dataGridViewBtn
-            // 
-            dataGridViewBtn.BackgroundColor = Color.AntiqueWhite;
-            dataGridViewBtn.BorderStyle = BorderStyle.None;
-            dataGridViewBtn.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewBtn.Location = new Point(364, 194);
-            dataGridViewBtn.Name = "dataGridViewBtn";
-            dataGridViewBtn.Size = new Size(558, 296);
-            dataGridViewBtn.TabIndex = 90;
-            dataGridViewBtn.CellContentClick += dataGridViewBtn_CellContentClick;
             // 
             // dateTimePicker1Btn
             // 
@@ -345,12 +334,23 @@
             BtnEnrollment.UseVisualStyleBackColor = true;
             BtnEnrollment.Click += BtnEnrollment_Click;
             // 
+            // dataGridView0
+            // 
+            dataGridView0.BackgroundColor = Color.AntiqueWhite;
+            dataGridView0.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView0.Location = new Point(364, 204);
+            dataGridView0.Name = "dataGridView0";
+            dataGridView0.Size = new Size(558, 295);
+            dataGridView0.TabIndex = 128;
+            dataGridView0.CellContentClick += dataGridView0_CellContentClick;
+            // 
             // Semesters
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Tan;
             ClientSize = new Size(992, 571);
+            Controls.Add(dataGridView0);
             Controls.Add(BtnEnrollment);
             Controls.Add(SchoolBtn);
             Controls.Add(ClassBtn);
@@ -376,12 +376,11 @@
             Controls.Add(UpdateBtn);
             Controls.Add(BtnCreate);
             Controls.Add(textBox1);
-            Controls.Add(dataGridViewBtn);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Semesters";
             Text = "Semesters";
             Load += Semesters_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridViewBtn).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView0).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -399,7 +398,6 @@
         private Button UpdateBtn;
         private Button BtnCreate;
         private TextBox textBox1;
-        private DataGridView dataGridViewBtn;
         private DateTimePicker dateTimePicker1Btn;
         private TextBox textBox4;
         private DateTimePicker dateTimePicker2Btn;
@@ -414,5 +412,6 @@
         private Button ClassBtn;
         private Button SchoolBtn;
         private Button BtnEnrollment;
+        private DataGridView dataGridView0;
     }
 }

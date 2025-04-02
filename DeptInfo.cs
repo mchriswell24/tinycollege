@@ -13,6 +13,8 @@ namespace tinycollege
 {
     public partial class DeptInfo : Form
     {
+        MySQLConnector mmm = new MySQLConnector();
+
         public DeptInfo()
         {
             InitializeComponent();
@@ -30,6 +32,7 @@ namespace tinycollege
 
         public void DeptInfo_Load(object sender, EventArgs e)
         {
+            dataGridView6.DataSource = mmm.Fetchdepartment();
 
         }
 
@@ -127,6 +130,11 @@ namespace tinycollege
             Profes profesForm = new Profes();
             profesForm.Show();
             this.Hide();
+        }
+
+        private void dataGridView6_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

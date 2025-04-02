@@ -12,6 +12,8 @@ namespace tinycollege
 {
     public partial class RoomsInfo : Form
     {
+        MySQLConnector mmm = new MySQLConnector();
+
         public RoomsInfo()
         {
             InitializeComponent();
@@ -50,26 +52,11 @@ namespace tinycollege
         {
 
         }
-
-        private void CrossBtn_Click(object sender, EventArgs e)
-        {
-            Profes profesForm = new Profes();
-            profesForm.Show();
-
-            // Close the current RoomsInfo form
-            this.Close();
-        }
-
         private void RoomsInfo_Load(object sender, EventArgs e)
         {
+            dataGridView4.DataSource = mmm.Fetchroom();
 
         }
-
-        private void RoomsInfo_FormClosing(object sender, FormClosingEventArgs e)
-        {
-
-        }
-
         private void SchoolBtn_Click(object sender, EventArgs e)
         {
             SchoolInfo Form = new SchoolInfo();
@@ -135,6 +122,11 @@ namespace tinycollege
         }
 
         private void BtnEnrollment_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView4_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

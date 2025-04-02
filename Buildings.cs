@@ -13,6 +13,8 @@ namespace tinycollege
 {
     public partial class Buildings : Form
     {
+        MySQLConnector mmm = new MySQLConnector();
+
         public Buildings()
         {
             InitializeComponent();
@@ -29,6 +31,7 @@ namespace tinycollege
 
         public void Buildings_Load(object sender, EventArgs e)
         {
+            dataGridView5.DataSource = mmm.Fetchbuilding();
 
         }
 
@@ -107,12 +110,6 @@ namespace tinycollege
             profesForm.Show();
             this.Hide();
         }
-
-        private void dataGridViewBtn_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void dataGridView5_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 

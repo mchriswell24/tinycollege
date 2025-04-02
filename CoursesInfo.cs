@@ -26,15 +26,9 @@ namespace tinycollege
 
         public void CoursesInfo_Load(object sender, EventArgs e)
         {
-            dataGridView3.DataSource = mmm.Fetchstudent();
+            dataGridView3.DataSource = mmm.Fetchcourse();
 
         }
-
-        private void dataGridViewBtn_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
 

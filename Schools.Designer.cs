@@ -50,8 +50,8 @@
             CourseBtn = new Button();
             ClassBtn = new Button();
             BtnEnrollment = new Button();
-            dataGridView4 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView4).BeginInit();
+            dataGridView8 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView8).BeginInit();
             SuspendLayout();
             // 
             // textBox6
@@ -306,14 +306,15 @@
             BtnEnrollment.UseVisualStyleBackColor = true;
             BtnEnrollment.Click += BtnEnrollment_Click;
             // 
-            // dataGridView4
+            // dataGridView8
             // 
-            dataGridView4.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView4.Location = new Point(338, 208);
-            dataGridView4.Name = "dataGridView4";
-            dataGridView4.Size = new Size(548, 281);
-            dataGridView4.TabIndex = 128;
-            dataGridView4.CellContentClick += dataGridView4_CellContentClick;
+            dataGridView8.BackgroundColor = Color.AntiqueWhite;
+            dataGridView8.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView8.Location = new Point(338, 195);
+            dataGridView8.Name = "dataGridView8";
+            dataGridView8.Size = new Size(548, 265);
+            dataGridView8.TabIndex = 128;
+            dataGridView8.CellContentClick += dataGridView8_CellContentClick;
             // 
             // SchoolInfo
             // 
@@ -321,7 +322,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Tan;
             ClientSize = new Size(992, 571);
-            Controls.Add(dataGridView4);
+            Controls.Add(dataGridView8);
             Controls.Add(BtnEnrollment);
             Controls.Add(ClassBtn);
             Controls.Add(CourseBtn);
@@ -348,7 +349,7 @@
             Name = "SchoolInfo";
             Text = "Schools";
             Load += Schools_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView8).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -376,6 +377,6 @@
         private Button CourseBtn;
         private Button ClassBtn;
         private Button BtnEnrollment;
-        private DataGridView dataGridView4;
+        private DataGridView dataGridView8;
     }
 }

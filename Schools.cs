@@ -21,7 +21,7 @@ namespace tinycollege
 
         public void Schools_Load(object sender, EventArgs e)
         {
-            dataGridView4.DataSource = mmm.Fetchstudent();
+            dataGridView8.DataSource = mmm.Fetchschool();
 
         }
 
@@ -30,15 +30,8 @@ namespace tinycollege
             Profes profesForm = new Profes();
             profesForm.Show();
 
-            // Close the current RoomsInfo form
             this.Close();
         }
-
-        private void dataGridViewBtn_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void CreateBtn_Click(object sender, EventArgs e)
         {
 
@@ -136,7 +129,7 @@ namespace tinycollege
             this.Hide();
         }
 
-        private void dataGridView4_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView8_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
