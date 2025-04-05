@@ -42,7 +42,7 @@
             dateTimePicker1Btn = new DateTimePicker();
             textBox4 = new TextBox();
             dateTimePicker2Btn = new DateTimePicker();
-            textBox7 = new TextBox();
+            searchtxt = new TextBox();
             BtnEdit = new Button();
             RoomBtn = new Button();
             ProfessorBtn = new Button();
@@ -206,14 +206,15 @@
             dateTimePicker2Btn.TabIndex = 109;
             dateTimePicker2Btn.ValueChanged += dateTimePicker2Btn_ValueChanged;
             // 
-            // textBox7
+            // searchtxt
             // 
-            textBox7.BorderStyle = BorderStyle.None;
-            textBox7.Location = new Point(364, 172);
-            textBox7.Name = "textBox7";
-            textBox7.PlaceholderText = "Search here";
-            textBox7.Size = new Size(558, 16);
-            textBox7.TabIndex = 110;
+            searchtxt.BorderStyle = BorderStyle.None;
+            searchtxt.Location = new Point(364, 172);
+            searchtxt.Name = "searchtxt";
+            searchtxt.PlaceholderText = "Search here";
+            searchtxt.Size = new Size(558, 16);
+            searchtxt.TabIndex = 110;
+            searchtxt.TextChanged += searchtxt_TextChanged;
             // 
             // BtnEdit
             // 
@@ -361,7 +362,7 @@
             Controls.Add(ProfessorBtn);
             Controls.Add(RoomBtn);
             Controls.Add(BtnEdit);
-            Controls.Add(textBox7);
+            Controls.Add(searchtxt);
             Controls.Add(dateTimePicker2Btn);
             Controls.Add(textBox4);
             Controls.Add(dateTimePicker1Btn);
@@ -401,7 +402,7 @@
         private DateTimePicker dateTimePicker1Btn;
         private TextBox textBox4;
         private DateTimePicker dateTimePicker2Btn;
-        private TextBox textBox7;
+        private TextBox searchtxt;
         private Button BtnEdit;
         private Button RoomBtn;
         private Button ProfessorBtn;
