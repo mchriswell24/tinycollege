@@ -185,7 +185,7 @@ namespace Enrollmentsystem
             }
         }
 
-        public void UpdateSemester(string semesterCode, int? semesterYear, string semesterTerm, DateTime? semesterStartDate, DateTime? semesterEndDate)
+        public void Updatesemesters(string semesterCode, int? semesterYear, string semesterTerm, DateTime? semesterStartDate, DateTime? semesterEndDate)
         {
             string query = "UPDATE SEMESTER SET SEMESTER_YEAR = @semesterYear, SEMESTER_TERM = @semesterTerm, SEMESTER_START_DATE = @semesterStartDate, SEMESTER_END_DATE = @semesterEndDate WHERE SEMESTER_CODE = @semesterCode";
             using (MySqlConnection conn = new MySqlConnection(connectionString))
