@@ -13,7 +13,7 @@ namespace tinycollege
     public partial class Semesters : Form
     {
         MySQLConnector mmm = new MySQLConnector();
-        SQLSearch search = new SQLSearch(); // Instance of your search class
+        SQLSearch search = new SQLSearch(); 
 
 
         public Semesters()
@@ -125,7 +125,6 @@ namespace tinycollege
 
         private void searchtxt_TextChanged(object sender, EventArgs e)
         {
-            search.Searchsemesters("", dataGridView0); // Show all students initially
 
         }
     }
